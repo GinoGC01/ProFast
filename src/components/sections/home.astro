@@ -1,0 +1,168 @@
+---
+import professionals from "../../professionals/professionals.json";
+import CardHome from "../cardHome.astro";
+---
+
+<section>
+  <strong>ProFast</strong>
+  <div class="professionals-title-dinamyc">Todos los profesionales</div>
+  <div class="filters">
+    <select id="category-filter">
+      <option value="all">Todos</option>
+      {
+        professionals?.map(({ category, profession }) => {
+          return <option value={category}>{profession}</option>;
+        })
+      }
+    </select>
+    <form id="search-filter">
+      <input type="text" name="filter" placeholder="Buscar por profesión..." />
+      <button>Buscar</button>
+    </form>
+  </div>
+  <div class="cards-container">
+    <ul class="list-of-cards" id="cards-container">
+      {
+        professionals?.map(
+          ({
+            name,
+            id,
+            achivements,
+            backgroundImg,
+            verify,
+            testimonies,
+            profileImg,
+            profession,
+            informationOfService,
+            category,
+          }) => {
+            return (
+              <CardHome
+                id={id}
+                category={category}
+                achievements={achivements}
+                backgroundImg={backgroundImg}
+                name={name}
+                verify={verify}
+                testimonies={testimonies}
+                profileImg={profileImg}
+                profession={profession}
+                informationOfWork={informationOfService}
+              />
+            );
+          }
+        )
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  section {
+    display: grid;
+    grid-template-columns: 20em 1fr;
+    grid-template-rows: 4em 1fr 2em;
+    width: 100%;
+    max-height: 100vh;
+  }
+
+  .filters {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .cards-container {
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+  }
+
+  .list-of-cards {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    padding: 0.5em 1em;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+
+  /* width */
+  .list-of-cards::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  .list-of-cards::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+
+  /* Handle */
+  .list-of-cards::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  .list-of-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .professionals-title-dinamyc {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+</style>
+
+<script>
+  // JavaScript para aplicar el filtro
+  const filterSelect = document.getElementById(
+    "category-filter"
+  ) as HTMLSelectElement;
+  const cardsContainer = document.getElementById(
+    "cards-container"
+  ) as HTMLElement;
+
+  const formSearchFilter = document.getElementById(
+    "search-filter"
+  ) as HTMLFormElement;
+
+  filterSelect?.addEventListener("change", () => {
+    const selectedCategory = filterSelect.value;
+    const cards = cardsContainer.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      const category = card.getAttribute("data-category");
+      (card as HTMLElement).style.display =
+        selectedCategory === "all" || category === selectedCategory
+          ? ""
+          : "none";
+    });
+  });
+
+  formSearchFilter.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Verifica que e.target sea un formulario
+    const form = e.target instanceof HTMLFormElement ? e.target : null;
+
+    if (form) {
+      const formData = new FormData(form);
+      const fields = Object.fromEntries(formData);
+
+      const cards = cardsContainer.querySelectorAll(".card");
+
+      cards.forEach((card) => {
+        const profession = card.getAttribute("data-profession");
+
+        // Verifica si fields.filter es una cadena antes de usar toLowerCase
+        const filter = fields.filter;
+        if (typeof filter === "string" && profession) {
+          (card as HTMLElement).style.display =
+            filter === "all" ||
+            profession.toLowerCase().includes(filter.toLowerCase().trim())
+              ? ""
+              : "none";
+        }
+      });
+    }
+  });
+</script>

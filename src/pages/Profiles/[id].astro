@@ -1,0 +1,338 @@
+---
+import professionals from "../../professionals/professionals.json";
+import Layout from "../../layouts/Layout.astro";
+import Check from "../../icons/check.astro";
+import CicleStar from "../../icons/circleStar.astro";
+import Location from "../../icons/location.astro";
+import Plans from "../../components/plans.astro";
+import About from "../../components/about.astro";
+
+export const getStaticPaths = () => {
+  return professionals?.map((professional) => ({
+    params: { id: professional.id },
+    props: { professional },
+  }));
+};
+
+const { professional } = Astro.props;
+const {
+  name,
+  backgroundImg,
+  profileImg,
+  profession,
+  location,
+  testimonies,
+  verify,
+  presentation,
+  plans,
+  about,
+} = professional;
+
+const { title, body } = presentation;
+---
+
+<Layout>
+  <section class="page-section">
+    <h3>ProFast</h3>
+    <section class="profile-section">
+      <div class="portada">
+        <img
+          src={backgroundImg}
+          alt={`Background image of ${name} `}
+          loading="lazy"
+        />
+      </div>
+      <section class="content">
+        <header>
+          <figure>
+            <img
+              src={profileImg}
+              alt={`Profile image of ${name} `}
+              loading="lazy"
+            />
+            {
+              verify && (
+                <span class="verify-check">
+                  <Check />
+                </span>
+              )
+            }
+          </figure>
+          <div class="data">
+            <h1>{profession}</h1>
+            <div class="name">
+              <h2>{name}</h2>
+              {
+                verify && (
+                  <span class="verificado">
+                    verificado <Check />
+                  </span>
+                )
+              }
+            </div>
+            <span class="location"><Location />{location}</span>
+            <span class="logro"
+              ><CicleStar /> +{testimonies.length} clientes satisfechos</span
+            >
+            <a href="#">Contáctame</a>
+          </div>
+        </header>
+        <div class="simil-about">
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </div>
+        <ul class="testimonies">
+          {
+            testimonies.map((testimonie) => {
+              return (
+                <li>
+                  <span>{testimonie.client}</span>
+                  <span>
+                    {testimonie.feedback} <span>{testimonie.punctuation}</span>
+                  </span>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </section>
+      <div class="menu">
+        <div class="menu-buttons">
+          <button id="plans-btn">Planes</button>
+          <button id="about-btn">Sobre mi</button>
+        </div>
+        <div class="menu-content-container">
+          <div id="plans-container" class="plans-container">
+            <Plans plans={plans} />
+          </div>
+          <div id="about-container" class="about-container">
+            <About about={about} />
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</Layout>
+
+<script>
+  const plansContainer = document.getElementById(
+    "plans-container"
+  ) as HTMLElement;
+  const aboutContainer = document.getElementById(
+    "about-container"
+  ) as HTMLElement;
+
+  const plansBtn = document.getElementById("plans-btn");
+  const aboutBtn = document.getElementById("about-btn");
+
+  interface Params {
+    focusContent: HTMLElement;
+    removeClassFirstContent: HTMLElement;
+  }
+  const handlerStatus = (params: Params) => {
+    const { focusContent, removeClassFirstContent } = params;
+    if (removeClassFirstContent?.classList.contains("on")) {
+      removeClassFirstContent?.classList.remove("on");
+    }
+    focusContent?.classList.add("on");
+    console.log("log");
+  };
+
+  const paramPlans = {
+    focusContent: plansContainer,
+    removeClassFirstContent: aboutContainer,
+  };
+
+  const paramAbout = {
+    focusContent: aboutContainer,
+    removeClassFirstContent: plansContainer,
+  };
+
+  handlerStatus(paramPlans);
+  plansBtn?.addEventListener("click", () => {
+    handlerStatus(paramPlans);
+  });
+  aboutBtn?.addEventListener("click", () => {
+    handlerStatus(paramAbout);
+  });
+</script>
+
+<style>
+  /* script class */
+
+  .plans-container,
+  .about-container {
+    display: none;
+  }
+
+  .on {
+    display: block;
+    height: 450px;
+  }
+
+  .menu-content-container {
+    height: 60%;
+    display: grid;
+    place-content: center;
+  }
+
+  .menu-buttons {
+    width: 600px;
+    margin: auto;
+  }
+
+  .menu-buttons button {
+    background-color: transparent;
+    padding: 5px 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .menu-buttons button:hover {
+    text-decoration: underline;
+  }
+
+  /* ------- */
+  .page-section > h3 {
+    font-size: 2.5em;
+    text-align: center;
+    padding-block: 15px;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .profile-section {
+    max-width: 80vw;
+    height: 87vh;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 1em;
+  }
+  .portada {
+    width: 100%;
+    height: 35.5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    grid-column: 1 / 3;
+  }
+
+  .portada img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    grid-column: 1 / 2;
+    position: relative;
+    z-index: 2000;
+    padding-left: 30px;
+    place-content: center;
+  }
+
+  .content header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .content figure {
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .content figure img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .verify-check {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    display: grid;
+    place-content: center;
+    bottom: 10px;
+    right: 25px;
+    background-color: #14ae5c;
+    border-radius: 50%;
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .data h1 {
+    font-size: 1.3em;
+    color: #d9d9d9;
+  }
+
+  .data h2 {
+    font-size: 3em;
+    color: white;
+  }
+
+  .location,
+  .logro {
+    display: inline-flex;
+    color: #a8a8a8;
+    gap: 0.2em;
+    margin-right: 10px;
+  }
+
+  .verificado {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    padding: 5px 20px;
+    background-color: #14ae5c;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8em;
+  }
+
+  .data a {
+    display: block;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background-color: #d9d9d9;
+    width: fit-content;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .simil-about h3 {
+    color: white;
+    font-size: 1.7em;
+    font-weight: bolder;
+    padding-block: 20px;
+  }
+
+  .simil-about p {
+    color: #d9d9d9;
+    line-height: 1.7;
+    font-size: 1.1em;
+  }
+
+  .menu {
+    position: relative;
+    z-index: 3000;
+    grid-column: 2/3;
+    place-content: center;
+  }
+</style>

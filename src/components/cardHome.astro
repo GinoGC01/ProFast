@@ -1,0 +1,159 @@
+---
+import Star from "../icons/star.astro";
+interface Props {
+  name: string;
+  id: string;
+  profileImg: string;
+  backgroundImg: string;
+  profession: string;
+  verify: boolean;
+  informationOfWork: string;
+  testimonies: { client: string; feedback: string; punctuation: number }[]; // Arreglo de objetos con propiedades específicas
+  achievements: string[];
+  category: string;
+}
+const {
+  name,
+  id,
+  profession,
+  verify,
+  profileImg,
+  backgroundImg,
+  informationOfWork,
+  testimonies,
+  achievements,
+  category,
+} = Astro.props;
+
+const promedioPuntuacion =
+  testimonies.reduce((acumulador, testimonie) => {
+    return acumulador + testimonie.punctuation;
+  }, 0) / testimonies.length;
+---
+
+<li class="card" data-category={category} data-profession={profession}>
+  <figure>
+    <img src={backgroundImg} alt={`background image of ${name}`} />
+  </figure>
+  <div class="profile-data">
+    <div class="superior-data">
+      <img src={profileImg} alt={`profile image of ${name}`} />
+      <a href={`/Profiles/${id}`} class="name-profession">
+        <span class="name">{name}</span>
+        <span class="profession">{profession}</span>
+      </a>
+      {verify && <span class="verify">verificado</span>}
+    </div>
+    <p>{informationOfWork}</p>
+  </div>
+  <div class="insights">
+    <span><Star />{promedioPuntuacion} <b>({testimonies.length})</b></span>
+    <ul>
+      {
+        achievements.map((achivement) => {
+          return <li>{achivement}</li>;
+        })
+      }
+    </ul>
+  </div>
+</li>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    color: rgb(212, 212, 212);
+    min-height: 500px;
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  figure img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .profile-data,
+  .insights {
+    padding-inline: 10px;
+  }
+  .profile-data p {
+    margin-block: 10px;
+  }
+
+  .verify {
+    display: block;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    background-color: #14ae5c;
+    display: grid;
+    place-content: center;
+    height: 1.3em;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .superior-data {
+    display: flex;
+    position: relative;
+    padding-top: 7px;
+  }
+
+  .superior-data img {
+    aspect-ratio: 1 / 1;
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .name-profession {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .name-profession:hover {
+    text-decoration: underline;
+  }
+
+  .name {
+    font-weight: 600;
+  }
+
+  .profession {
+    color: #858585;
+  }
+
+  .insights span {
+    display: flex;
+    font-weight: 600;
+  }
+
+  .insights span b {
+    font-weight: 400;
+    color: #858585;
+    margin-left: 5px;
+  }
+
+  .insights ul {
+    margin-top: 10px;
+  }
+
+  .insights li {
+    padding: 2px 7px;
+    border: 1px solid #858585;
+    border-radius: 10px;
+    font-size: 0.7em;
+    display: inline-block;
+    margin: 5px;
+  }
+</style>

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Boda Pérez-González",
+        "feedback": "Las fotos capturaron cada momento especial. Excelente trabajo.",
+        "punctuation": 5
+      },
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Mi objetivo es convertir tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad, sensibilidad y profesionalismo. Ya sea un evento especial, un producto único o una sesión personal, me dedico a resaltar los detalles que hacen que cada fotografía sea significativa y cuente una historia. Trabajo en estrecha colaboración contigo para garantizar que el resultado final supere tus expectativas y refleje tu visión de manera auténtica"
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+
+    "about": {
+      "curriculumVitae": "https://miwebpersonal.com/cv-maria-gomez.pdf",
+      "carrera": "Diseñadora Gráfica con especialización en identidad visual y diseño digital.",
+      "perfil": "Soy una profesional apasionada con más de 5 años de experiencia creando soluciones visuales impactantes para empresas y particulares. Mi enfoque combina creatividad, atención al detalle y un compromiso constante con la innovación. Estoy en búsqueda de nuevas oportunidades para contribuir con mis habilidades en un entorno dinámico y colaborativo.",
+      "habilidades": [
+        "Diseño UX/UI",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Figma",
+        "Diseño de Branding",
+        "Edición de video"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "Intermedio (B2)"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad Nacional de Córdoba",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2018
+        },
+        {
+          "institucion": "Platzi",
+          "titulo": "Certificación en Diseño UX/UI",
+          "anioGraduacion": 2022
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa Z",
+          "cargo": "Diseñadora Gráfica Senior",
+          "periodo": "2020 - 2023",
+          "responsabilidades": [
+            "Diseño de identidades visuales para más de 30 empresas.",
+            "Colaboración con el equipo de marketing en campañas digitales.",
+            "Supervisión de proyectos gráficos y revisión de entregables."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2018 - 2020",
+          "responsabilidades": [
+            "Creación de logotipos personalizados para clientes particulares.",
+            "Diseño de materiales impresos como tarjetas de presentación y catálogos.",
+            "Gestión de proyectos de diseño desde la idea inicial hasta la entrega final."
+          ]
+        }
+      ],
+      "intereses": [
+        "Fotografía",
+        "Arte digital",
+        "Viajes",
+        "Tecnología",
+        "Sostenibilidad"
+      ],
+      "logros": [
+        "Ganadora del premio 'Diseño Innovador' en el Concurso Nacional de Creatividad 2022.",
+        "Diseño destacado en la revista 'Creative Minds' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Tiempo completo", "Medio tiempo", "Freelance"]
+      }
+    }
+  }
+]

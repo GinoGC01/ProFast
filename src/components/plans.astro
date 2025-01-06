@@ -1,0 +1,213 @@
+---
+import Paypal from "../icons/methodOfPay/paypal.astro";
+import TransferenciaBancaria from "../icons/methodOfPay/transferenciaBancaria.astro";
+interface Props {
+  plans: {
+    methodOfPay: { method: string }[];
+    types: {
+      id: string;
+      title: string;
+      description: string;
+      price: number;
+      divisa: string;
+      deliveryTime: string;
+      hirePlan: string;
+    }[];
+    images: { status: boolean; galery: string[] };
+  };
+}
+
+const { plans } = Astro.props;
+const { methodOfPay, types } = plans;
+
+const METHOD_ICONS: any = {
+  PayPal: Paypal,
+  TransferenciaBancaria,
+};
+---
+
+<section id="plans">
+  <div class="buttons-plans">
+    <button id="btn-basic">Plan básico</button>
+    <button id="btn-standard">Plan standard</button>
+    <button id="btn-premium">Plan premium</button>
+  </div>
+  <div class="content-plans">
+    {
+      types?.map(
+        ({ id, title, description, price, divisa, deliveryTime, hirePlan }) => {
+          return (
+            <div id={id} class={id}>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <div class="price">
+                <span>{price}</span>
+                <span>{divisa}</span>
+              </div>
+              <span>
+                Entrega estimada en: <b>{deliveryTime}</b>
+              </span>
+              <ul class="methodOfPay">
+                <header>
+                  <h4>Metodos de pago</h4>
+                </header>
+                {methodOfPay?.map(({ method }) => {
+                  const iconName = method === "Paypal" ? "Paypal" : method;
+                  const Icon = METHOD_ICONS[iconName];
+                  return (
+                    <li>
+                      {Icon && <Icon />}{" "}
+                      <span>
+                        {method == "TransferenciaBancaria"
+                          ? "Transferencia Bancaria"
+                          : method}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+
+              <a href={hirePlan}>Contratar {title}</a>
+            </div>
+          );
+        }
+      )
+    }
+  </div>
+</section>
+
+<script>
+  const basicBTN = document.getElementById("btn-basic") as HTMLElement;
+  const standardBTN = document.getElementById("btn-standard") as HTMLElement;
+  const premiumBTN = document.getElementById("btn-premium") as HTMLElement;
+
+  const basicConteiner = document.getElementById("basic") as HTMLElement;
+  const standardConteiner = document.getElementById("standard") as HTMLElement;
+  const premiumConteiner = document.getElementById("premium") as HTMLElement;
+
+  interface Params {
+    focusContent: HTMLElement;
+    removeClassFirstContent: HTMLElement;
+    removeClassSecondContent: HTMLElement;
+  }
+
+  const handlerStatus = (params: Params) => {
+    const { focusContent, removeClassFirstContent, removeClassSecondContent } =
+      params;
+    if (
+      removeClassFirstContent?.classList.contains("on") ||
+      removeClassSecondContent?.classList.contains("on")
+    ) {
+      removeClassFirstContent?.classList.remove("on");
+      removeClassSecondContent?.classList.remove("on");
+    }
+    focusContent?.classList.add("on");
+    console.log("log");
+  };
+
+  const paramBasic = {
+    focusContent: basicConteiner,
+    removeClassFirstContent: standardConteiner,
+    removeClassSecondContent: premiumConteiner,
+  };
+
+  const paramStandard = {
+    focusContent: standardConteiner,
+    removeClassFirstContent: basicConteiner,
+    removeClassSecondContent: premiumConteiner,
+  };
+
+  const paramPremium = {
+    focusContent: premiumConteiner,
+    removeClassFirstContent: basicConteiner,
+    removeClassSecondContent: standardConteiner,
+  };
+
+  handlerStatus(paramBasic);
+  basicBTN?.addEventListener("click", () => {
+    handlerStatus(paramBasic);
+  });
+  standardBTN?.addEventListener("click", () => {
+    handlerStatus(paramStandard);
+  });
+  premiumBTN?.addEventListener("click", () => {
+    handlerStatus(paramPremium);
+  });
+</script>
+
+<style>
+  #plans {
+    width: 600px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    margin: auto;
+  }
+
+  .buttons-plans {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #btn-basic,
+  #btn-standard,
+  #btn-premium {
+    width: 100%;
+    padding-block: 15px;
+    border: none;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    cursor: pointer;
+    background-color: #d9d9d9;
+    color: #131313;
+    font-size: 0.9em;
+  }
+  .premium,
+  .standard,
+  .basic {
+    padding: 10px;
+    display: none;
+  }
+  .on {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: #d9d9d9;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h3,
+  h4 {
+    text-decoration: underline;
+  }
+
+  a {
+    margin-block: 20px;
+    padding-block: 7px;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    color: #131313;
+
+    background-color: #131313;
+    color: #d9d9d9;
+    text-align: center;
+  }
+
+  .methodOfPay {
+    margin-block: 20px;
+  }
+
+  .methodOfPay li {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 10px;
+  }
+</style>
