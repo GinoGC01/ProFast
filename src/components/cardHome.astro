@@ -37,10 +37,16 @@ const promedioPuntuacion =
   </figure>
   <div class="profile-data">
     <div class="superior-data">
-      <img src={profileImg} alt={`profile image of ${name}`} />
+      <img
+        src={profileImg}
+        alt={`profile image of ${name}`}
+        transition:name={`img-${id}`}
+      />
       <a href={`/Profiles/${id}`} class="name-profession">
-        <span class="name">{name}</span>
-        <span class="profession">{profession}</span>
+        <h2 class="name" transition:name={`name-${id}`}>{name}</h2>
+        <span class="profession" transition:name={`profession-${id}`}
+          >{profession}</span
+        >
       </a>
       {verify && <span class="verify">verificado</span>}
     </div>

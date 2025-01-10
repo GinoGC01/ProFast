@@ -28,9 +28,9 @@ const METHOD_ICONS: any = {
 
 <section id="plans">
   <div class="buttons-plans">
-    <button id="btn-basic">Plan básico</button>
-    <button id="btn-standard">Plan standard</button>
-    <button id="btn-premium">Plan premium</button>
+    <button id="btn-basic" class="btn-basic">Plan básico</button>
+    <button id="btn-standard" class="btn-standard">Plan standard</button>
+    <button id="btn-premium" class="btn-premium">Plan premium</button>
   </div>
   <div class="content-plans">
     {
@@ -89,55 +89,86 @@ const METHOD_ICONS: any = {
     focusContent: HTMLElement;
     removeClassFirstContent: HTMLElement;
     removeClassSecondContent: HTMLElement;
+    clase: string;
   }
 
   const handlerStatus = (params: Params) => {
-    const { focusContent, removeClassFirstContent, removeClassSecondContent } =
-      params;
+    const {
+      focusContent,
+      removeClassFirstContent,
+      removeClassSecondContent,
+      clase,
+    } = params;
     if (
-      removeClassFirstContent?.classList.contains("on") ||
-      removeClassSecondContent?.classList.contains("on")
+      removeClassFirstContent?.classList.contains(clase) ||
+      removeClassSecondContent?.classList.contains(clase)
     ) {
-      removeClassFirstContent?.classList.remove("on");
-      removeClassSecondContent?.classList.remove("on");
+      removeClassFirstContent?.classList.remove(clase);
+      removeClassSecondContent?.classList.remove(clase);
     }
-    focusContent?.classList.add("on");
-    console.log("log");
+    focusContent?.classList.add(clase);
   };
 
   const paramBasic = {
     focusContent: basicConteiner,
     removeClassFirstContent: standardConteiner,
     removeClassSecondContent: premiumConteiner,
+    clase: "on",
   };
 
   const paramStandard = {
     focusContent: standardConteiner,
     removeClassFirstContent: basicConteiner,
     removeClassSecondContent: premiumConteiner,
+    clase: "on",
   };
 
   const paramPremium = {
     focusContent: premiumConteiner,
     removeClassFirstContent: basicConteiner,
     removeClassSecondContent: standardConteiner,
+    clase: "on",
   };
 
-  handlerStatus(paramBasic);
+  // btn
+  const paramPremiumBTN = {
+    focusContent: premiumBTN,
+    removeClassFirstContent: basicBTN,
+    removeClassSecondContent: standardBTN,
+    clase: "on-btn",
+  };
+  const paramStandardBTN = {
+    focusContent: standardBTN,
+    removeClassFirstContent: basicBTN,
+    removeClassSecondContent: premiumBTN,
+    clase: "on-btn",
+  };
+  const paramBasicBTN = {
+    focusContent: basicBTN,
+    removeClassFirstContent: premiumBTN,
+    removeClassSecondContent: standardBTN,
+    clase: "on-btn",
+  };
+
+  handlerStatus(paramStandard);
+  handlerStatus(paramStandardBTN);
   basicBTN?.addEventListener("click", () => {
     handlerStatus(paramBasic);
+    handlerStatus(paramBasicBTN);
   });
   standardBTN?.addEventListener("click", () => {
     handlerStatus(paramStandard);
+    handlerStatus(paramStandardBTN);
   });
   premiumBTN?.addEventListener("click", () => {
     handlerStatus(paramPremium);
+    handlerStatus(paramPremiumBTN);
   });
 </script>
 
 <style>
   #plans {
-    width: 600px;
+    width: 650px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -149,9 +180,9 @@ const METHOD_ICONS: any = {
     justify-content: space-between;
   }
 
-  #btn-basic,
-  #btn-standard,
-  #btn-premium {
+  .btn-basic,
+  .btn-standard,
+  .btn-premium {
     width: 100%;
     padding-block: 15px;
     border: none;
@@ -161,6 +192,13 @@ const METHOD_ICONS: any = {
     background-color: #d9d9d9;
     color: #131313;
     font-size: 0.9em;
+    transition: background-color 0.2s;
+  }
+
+  .on-btn {
+    background-color: #131313;
+    color: #d9d9d9;
+    border: 1px solid #131313;
   }
   .premium,
   .standard,

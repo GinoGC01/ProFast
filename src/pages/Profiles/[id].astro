@@ -4,8 +4,10 @@ import Layout from "../../layouts/Layout.astro";
 import Check from "../../icons/check.astro";
 import CicleStar from "../../icons/circleStar.astro";
 import Location from "../../icons/location.astro";
-import Plans from "../../components/plans.astro";
-import About from "../../components/about.astro";
+// import Menu from "../../components/menu.astro";
+import { Menu } from "../../components/menu.jsx";
+
+// export const prerender = true;
 
 export const getStaticPaths = () => {
   return professionals?.map((professional) => ({
@@ -16,6 +18,7 @@ export const getStaticPaths = () => {
 
 const { professional } = Astro.props;
 const {
+  id,
   name,
   backgroundImg,
   profileImg,
@@ -33,7 +36,7 @@ const { title, body } = presentation;
 
 <Layout>
   <section class="page-section">
-    <h3>ProFast</h3>
+    <a href="/">ProFast</a>
     <section class="profile-section">
       <div class="portada">
         <img
@@ -49,6 +52,7 @@ const { title, body } = presentation;
               src={profileImg}
               alt={`Profile image of ${name} `}
               loading="lazy"
+              transition:name={`img-${id}`}
             />
             {
               verify && (
@@ -59,9 +63,9 @@ const { title, body } = presentation;
             }
           </figure>
           <div class="data">
-            <h1>{profession}</h1>
+            <h1 transition:name={`profession-${id}`}>{profession}</h1>
             <div class="name">
-              <h2>{name}</h2>
+              <h2 transition:name={`name-${id}`}>{name}</h2>
               {
                 verify && (
                   <span class="verificado">
@@ -96,107 +100,16 @@ const { title, body } = presentation;
           }
         </ul>
       </section>
-      <div class="menu">
-        <div class="menu-buttons">
-          <button id="plans-btn">Planes</button>
-          <button id="about-btn">Sobre mi</button>
-        </div>
-        <div class="menu-content-container">
-          <div id="plans-container" class="plans-container">
-            <Plans plans={plans} />
-          </div>
-          <div id="about-container" class="about-container">
-            <About about={about} />
-          </div>
-        </div>
-      </div>
+      <!-- insert menu -->
+      <Menu plans={plans} about={about} client:load />
     </section>
   </section>
 </Layout>
 
-<script>
-  const plansContainer = document.getElementById(
-    "plans-container"
-  ) as HTMLElement;
-  const aboutContainer = document.getElementById(
-    "about-container"
-  ) as HTMLElement;
-
-  const plansBtn = document.getElementById("plans-btn");
-  const aboutBtn = document.getElementById("about-btn");
-
-  interface Params {
-    focusContent: HTMLElement;
-    removeClassFirstContent: HTMLElement;
-  }
-  const handlerStatus = (params: Params) => {
-    const { focusContent, removeClassFirstContent } = params;
-    if (removeClassFirstContent?.classList.contains("on")) {
-      removeClassFirstContent?.classList.remove("on");
-    }
-    focusContent?.classList.add("on");
-    console.log("log");
-  };
-
-  const paramPlans = {
-    focusContent: plansContainer,
-    removeClassFirstContent: aboutContainer,
-  };
-
-  const paramAbout = {
-    focusContent: aboutContainer,
-    removeClassFirstContent: plansContainer,
-  };
-
-  handlerStatus(paramPlans);
-  plansBtn?.addEventListener("click", () => {
-    handlerStatus(paramPlans);
-  });
-  aboutBtn?.addEventListener("click", () => {
-    handlerStatus(paramAbout);
-  });
-</script>
-
 <style>
-  /* script class */
-
-  .plans-container,
-  .about-container {
-    display: none;
-  }
-
-  .on {
-    display: block;
-    height: 450px;
-  }
-
-  .menu-content-container {
-    height: 60%;
-    display: grid;
-    place-content: center;
-  }
-
-  .menu-buttons {
-    width: 600px;
-    margin: auto;
-  }
-
-  .menu-buttons button {
-    background-color: transparent;
-    padding: 5px 15px;
-    border: 1px solid white;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-
-  .menu-buttons button:hover {
-    text-decoration: underline;
-  }
-
   /* ------- */
-  .page-section > h3 {
+  .page-section > a {
+    display: block;
     font-size: 2.5em;
     text-align: center;
     padding-block: 15px;
@@ -327,12 +240,5 @@ const { title, body } = presentation;
     color: #d9d9d9;
     line-height: 1.7;
     font-size: 1.1em;
-  }
-
-  .menu {
-    position: relative;
-    z-index: 3000;
-    grid-column: 2/3;
-    place-content: center;
   }
 </style>

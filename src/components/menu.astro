@@ -1,0 +1,111 @@
+---
+import Plans from "./plans.astro";
+import About from "./about.astro";
+
+const { plans, about } = Astro.props;
+---
+
+<div class="menu">
+  <div class="menu-buttons">
+    <button id="plans-btn">Planes</button>
+    <button id="about-btn">Sobre mi</button>
+  </div>
+  <div class="menu-content-container">
+    <div id="plans-container" class="plans-container">
+      <Plans plans={plans} />
+    </div>
+    <div id="about-container" class="about-container">
+      <About about={about} />
+    </div>
+  </div>
+</div>
+
+<script>
+  const plansContainer = document.getElementById(
+    "plans-container"
+  ) as HTMLElement;
+  const aboutContainer = document.getElementById(
+    "about-container"
+  ) as HTMLElement;
+
+  const plansBtn = document.getElementById("plans-btn");
+  const aboutBtn = document.getElementById("about-btn");
+
+  console.log(plansContainer, aboutContainer);
+
+  interface Params {
+    focusContent: HTMLElement;
+    removeClassFirstContent: HTMLElement;
+  }
+  const handlerStatus = (params: Params) => {
+    const { focusContent, removeClassFirstContent } = params;
+    if (removeClassFirstContent?.classList.contains("on")) {
+      removeClassFirstContent?.classList.remove("on");
+    }
+    focusContent?.classList.add("on");
+    console.log("log-status-container");
+  };
+
+  const paramPlans = {
+    focusContent: plansContainer,
+    removeClassFirstContent: aboutContainer,
+  };
+
+  const paramAbout = {
+    focusContent: aboutContainer,
+    removeClassFirstContent: plansContainer,
+  };
+
+  handlerStatus(paramPlans);
+  plansBtn?.addEventListener("click", () => {
+    handlerStatus(paramPlans);
+  });
+  aboutBtn?.addEventListener("click", () => {
+    handlerStatus(paramAbout);
+  });
+</script>
+
+<style>
+  /* script class */
+  .menu {
+    position: relative;
+    z-index: 3000;
+    grid-column: 2/3;
+    place-content: center;
+  }
+
+  .plans-container,
+  .about-container {
+    display: none;
+  }
+
+  .on {
+    display: block;
+    height: 450px;
+  }
+
+  .menu-content-container {
+    height: 60%;
+    display: grid;
+    place-content: center;
+  }
+
+  .menu-buttons {
+    width: 650px;
+    margin: auto;
+  }
+
+  .menu-buttons button {
+    background-color: transparent;
+    padding: 5px 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .menu-buttons button:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,129 @@
+#plans {
+  width: 650px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.buttons-plans {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.buttons-plans button {
+  width: 100%;
+  padding-block: 15px;
+  border: none;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  color: #131313;
+  font-size: 0.9em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.buttons-plans button:first-child {
+  border-left: none;
+}
+
+.buttons-plans button:last-child {
+  border-right: none;
+}
+
+.buttons-plans .active {
+  background-color: #131313;
+  color: #d9d9d9;
+  border: 1px solid #131313;
+}
+
+.content-plans > div {
+  padding: 10px;
+  flex-direction: column;
+  gap: 0.5em;
+  color: #d9d9d9;
+}
+
+.content-plans .active {
+  display: flex;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-block: 10px;
+}
+
+.price > span {
+  margin-right: 5px;
+}
+
+.convertion-price {
+  display: inline-flex;
+  gap: 0.5em;
+}
+
+.convertion-price:last-child {
+  font-size: 0.8em;
+  color: #d9d9d97a;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.price-ars {
+  font-family: 1em;
+  font-weight: 400;
+  color: white;
+}
+
+#plans h3 {
+  margin-bottom: 5px;
+}
+#plans h4 {
+  margin-top: 15px;
+}
+
+#plans h3,
+#plans h4 {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+#plans a {
+  display: block;
+  margin-block: 20px;
+  padding-block: 15px;
+  border-radius: 5px;
+  background-color: #131313;
+  color: #d9d9d9;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#plans a:hover {
+  background-color: #d9d9d9;
+  color: #131313;
+}
+
+.methodOfPay {
+  margin-block: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.methodOfPay > li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex-basis: 1;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
