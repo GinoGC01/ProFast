@@ -12,14 +12,67 @@
     "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
     "testimonies": [
       {
-        "client": "Boda Pérez-González",
-        "feedback": "Las fotos capturaron cada momento especial. Excelente trabajo.",
-        "punctuation": 5
-      },
-      {
         "client": "Tienda Q",
         "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
-        "punctuation": 5
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
       }
     ],
     "achivements": [
@@ -28,7 +81,7 @@
     ],
     "presentation": {
       "title": "Momentos únicos capturados con creatividad",
-      "body": "Mi objetivo es convertir tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad, sensibilidad y profesionalismo. Ya sea un evento especial, un producto único o una sesión personal, me dedico a resaltar los detalles que hacen que cada fotografía sea significativa y cuente una historia. Trabajo en estrecha colaboración contigo para garantizar que el resultado final supere tus expectativas y refleje tu visión de manera auténtica"
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
     },
     "plans": {
       "status": true,
@@ -144,609 +197,114 @@
     }
   },
   {
-    "id": "Juan-Perez-Plomero",
-    "name": "Juan Pérez",
-    "profileImg": "../../../perfil.webp",
-    "backgroundImg": "../../../background.webp",
-    "profession": "Plomero",
-    "category": "Home Services",
-    "location": "Lomas de Zamora, Buenos Aires, Argentina",
-    "verify": true,
-    "contact": ["juanperez.plomero@gmail.com", "+54 11 4532 1123"],
-    "informationOfService": "Reparaciones, instalaciones y mantenimiento de sistemas de plomería.",
-    "testimonies": [
-      {
-        "client": "Casa Gómez",
-        "feedback": "Excelente trabajo, rápido y eficaz. Resolvió un problema urgente.",
-        "punctuation": 5
-      },
-      {
-        "client": "Edificio Las Palmas",
-        "feedback": "Servicio profesional, muy detallista.",
-        "punctuation": 4
-      }
-    ],
-    "achivements": [
-      "Más de 15 años de experiencia en el rubro",
-      "Certificado en sistemas modernos de plomería"
-    ],
-    "presentation": {
-      "title": "Tu solución de plomería de confianza",
-      "body": "Brindo un servicio confiable y eficiente en todo tipo de instalaciones y reparaciones de plomería. Trabajo con responsabilidad y profesionalismo, garantizando resultados duraderos. Desde pequeñas reparaciones hasta proyectos de gran envergadura, mi objetivo es superar tus expectativas."
-    },
-    "plans": {
-      "status": true,
-      "methodOfPay": [
-        { "method": "TransferenciaBancaria" },
-        { "method": "Efectivo" }
-      ],
-      "types": [
-        {
-          "id": "basic",
-          "title": "Plan Básico",
-          "description": "Reparación de caños y griferías básicas. Incluye materiales estándar.",
-          "price": 50,
-          "divisa": "USD",
-          "deliveryTime": "1 día",
-          "hirePlan": "#"
-        },
-        {
-          "id": "standard",
-          "title": "Plan Estándar",
-          "description": "Instalación de sanitarios. Incluye mano de obra y revisión de conexiones.",
-          "price": 200,
-          "divisa": "USD",
-          "deliveryTime": "3 días",
-          "hirePlan": "#"
-        },
-        {
-          "id": "premium",
-          "title": "Plan Premium",
-          "description": "Mantenimiento completo de plomería en hogares o empresas.",
-          "price": 500,
-          "divisa": "USD",
-          "deliveryTime": "7 días",
-          "hirePlan": "#"
-        }
-      ],
-      "images": {
-        "status": true,
-        "galery": [
-          "../../../background.webp",
-          "../../../background.webp",
-          "../../../background.webp"
-        ]
-      }
-    },
-    "about": {
-      "curriculumVitae": "https://miwebpersonal.com/cv-juan-perez.pdf",
-      "carrera": "Plomero especializado en sistemas residenciales e industriales.",
-      "perfil": "Soy un profesional comprometido con más de 15 años de experiencia en el rubro de la plomería. Mi enfoque es garantizar soluciones eficientes, económicas y duraderas para cualquier tipo de problema o instalación de plomería.",
-      "habilidades": [
-        "Reparación de cañerías",
-        "Instalación de sanitarios",
-        "Mantenimiento de sistemas de plomería",
-        "Revisión de sistemas de riego",
-        "Instalaciones industriales"
-      ],
-      "idiomas": {
-        "español": "Nativo",
-        "inglés": "Básico (A2)",
-        "italiano": "none"
-      },
-      "educacion": [
-        {
-          "institucion": "Escuela Técnica N°5",
-          "titulo": "Técnico en Plomería",
-          "anioGraduacion": 2005
-        }
-      ],
-      "experienciaLaboral": [
-        {
-          "empresa": "Servicios de Plomería Integral",
-          "cargo": "Plomero Principal",
-          "periodo": "2010 - 2023",
-          "responsabilidades": [
-            "Instalaciones completas de baños y cocinas.",
-            "Mantenimiento preventivo en edificios.",
-            "Reparaciones de urgencia."
-          ]
-        },
-        {
-          "empresa": "Freelance",
-          "cargo": "Plomero",
-          "periodo": "2005 - 2010",
-          "responsabilidades": [
-            "Trabajos menores en domicilios particulares.",
-            "Consultorías sobre sistemas de plomería."
-          ]
-        }
-      ],
-      "intereses": [
-        "Construcción sostenible",
-        "Tecnologías en plomería",
-        "Deportes",
-        "Viajes"
-      ],
-      "logros": [
-        "Implementación de sistemas de plomería en complejos residenciales.",
-        "Reconocido como el mejor plomero en Lomas de Zamora en 2020."
-      ],
-      "disponibilidad": {
-        "modalidad": ["Presencial"],
-        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
-      }
-    }
-  },
-  {
-    "id": "Carla-Fernandez-Maestra",
-    "name": "Carla Fernández",
-    "profileImg": "../../../perfil.webp",
-    "backgroundImg": "../../../background.webp",
-    "profession": "Maestra Particular",
-    "category": "Education",
-    "location": "Quilmes, Buenos Aires, Argentina",
-    "verify": true,
-    "contact": ["cfernandez.maestra@gmail.com", "+54 11 2345 6789"],
-    "informationOfService": "Clases particulares para nivel primario y secundario en todas las materias.",
-    "testimonies": [
-      {
-        "client": "Familia Ríos",
-        "feedback": "Gracias a Carla, mi hijo aprobó Matemática. Muy paciente y profesional.",
-        "punctuation": 5
-      },
-      {
-        "client": "Familia Castro",
-        "feedback": "Excelente método de enseñanza, mis hijos avanzaron mucho.",
-        "punctuation": 5
-      }
-    ],
-    "achivements": [
-      "10 años de experiencia como docente",
-      "Certificada en técnicas de aprendizaje inclusivo"
-    ],
-    "presentation": {
-      "title": "Educación personalizada para el éxito de tus hijos",
-      "body": "Mi pasión es enseñar y ayudar a los estudiantes a superar sus desafíos académicos. Con métodos personalizados y adaptados a cada niño, busco fomentar el amor por el aprendizaje y el crecimiento personal. Estoy comprometida con el progreso de cada estudiante, brindando apoyo y motivación constante."
-    },
-    "plans": {
-      "status": true,
-      "methodOfPay": [
-        { "method": "TransferenciaBancaria" },
-        { "method": "MercadoPago" }
-      ],
-      "types": [
-        {
-          "id": "basic",
-          "title": "Plan Básico",
-          "description": "1 hora de clase particular para nivel primario en una materia a elección.",
-          "price": 20,
-          "divisa": "USD",
-          "deliveryTime": "Inmediato",
-          "hirePlan": "#"
-        },
-        {
-          "id": "standard",
-          "title": "Plan Estándar",
-          "description": "3 clases particulares de 1 hora para nivel secundario, incluye refuerzo en tareas.",
-          "price": 50,
-          "divisa": "USD",
-          "deliveryTime": "3 días",
-          "hirePlan": "#"
-        },
-        {
-          "id": "premium",
-          "title": "Plan Premium",
-          "description": "5 clases semanales de 2 horas para preparar exámenes finales.",
-          "price": 100,
-          "divisa": "USD",
-          "deliveryTime": "7 días",
-          "hirePlan": "#"
-        }
-      ],
-      "images": {
-        "status": true,
-        "galery": [
-          "../../../background.webp",
-          "../../../background.webp",
-          "../../../background.webp"
-        ]
-      }
-    },
-    "about": {
-      "curriculumVitae": "https://miwebpersonal.com/cv-carla-fernandez.pdf",
-      "carrera": "Docente especializada en nivel primario y secundario.",
-      "perfil": "Soy una maestra apasionada por la enseñanza. Mi objetivo es ayudar a los estudiantes a alcanzar su máximo potencial académico, brindando un acompañamiento cercano y efectivo.",
-      "habilidades": [
-        "Clases personalizadas",
-        "Técnicas de estudio",
-        "Motivación escolar",
-        "Enseñanza inclusiva",
-        "Preparación de exámenes"
-      ],
-      "idiomas": {
-        "español": "Nativo",
-        "inglés": "Intermedio (B2)",
-        "italiano": "none"
-      },
-      "educacion": [
-        {
-          "institucion": "Instituto Superior de Formación Docente",
-          "titulo": "Profesora en Educación Primaria",
-          "anioGraduacion": 2012
-        }
-      ],
-      "experienciaLaboral": [
-        {
-          "empresa": "Escuela Nº12 Quilmes",
-          "cargo": "Maestra",
-          "periodo": "2013 - 2020",
-          "responsabilidades": [
-            "Dictado de clases en nivel primario.",
-            "Elaboración de materiales didácticos.",
-            "Organización de talleres educativos."
-          ]
-        },
-        {
-          "empresa": "Freelance",
-          "cargo": "Maestra Particular",
-          "periodo": "2020 - Actualidad",
-          "responsabilidades": [
-            "Clases particulares personalizadas.",
-            "Seguimiento académico.",
-            "Asesoramiento pedagógico a familias."
-          ]
-        }
-      ],
-      "intereses": [
-        "Educación inclusiva",
-        "Lectura",
-        "Desarrollo infantil",
-        "Tecnología educativa"
-      ],
-      "logros": [
-        "Reconocimiento como mejor docente por la comunidad de Quilmes en 2019.",
-        "Participación en congresos de educación inclusiva."
-      ],
-      "disponibilidad": {
-        "modalidad": ["Remoto", "Presencial"],
-        "jornada": ["Freelance", "Medio tiempo"]
-      }
-    }
-  },
-  {
-    "id": "Maria-Gonzalez-Peluquera",
-    "name": "María González",
-    "profileImg": "../../../perfil.webp",
-    "backgroundImg": "../../../background.webp",
-    "profession": "Peluquera",
-    "category": "Beauty Services",
-    "location": "San Justo, Buenos Aires, Argentina",
-    "verify": true,
-    "contact": ["mariag.peluquera@gmail.com", "+54 11 5467 8923"],
-    "informationOfService": "Cortes, peinados, tinturas y tratamientos capilares para hombres y mujeres.",
-    "testimonies": [
-      {
-        "client": "Sofía Martínez",
-        "feedback": "¡Me encantó el corte! Profesional y atenta a los detalles.",
-        "punctuation": 5
-      },
-      {
-        "client": "Luis Torres",
-        "feedback": "Excelente servicio, muy recomendable.",
-        "punctuation": 4
-      }
-    ],
-    "achivements": [
-      "Certificación en colorimetría avanzada",
-      "15 años de experiencia en peluquería"
-    ],
-    "presentation": {
-      "title": "Realzando tu belleza con estilo y profesionalismo",
-      "body": "Me apasiona ayudar a las personas a sentirse seguras y a resaltar su belleza. Brindo servicios personalizados en cortes, peinados y tratamientos capilares, utilizando productos de calidad y técnicas modernas para garantizar resultados excepcionales."
-    },
-    "plans": {
-      "status": true,
-      "methodOfPay": [
-        { "method": "TransferenciaBancaria" },
-        { "method": "Efectivo" }
-      ],
-      "types": [
-        {
-          "id": "basic",
-          "title": "Plan Básico",
-          "description": "Corte de cabello para hombres o mujeres. Incluye lavado y peinado básico.",
-          "price": 15,
-          "divisa": "USD",
-          "deliveryTime": "1 hora",
-          "hirePlan": "#"
-        },
-        {
-          "id": "standard",
-          "title": "Plan Estándar",
-          "description": "Tintura completa o tratamiento capilar hidratante. Incluye asesoramiento personalizado.",
-          "price": 40,
-          "divisa": "USD",
-          "deliveryTime": "2 horas",
-          "hirePlan": "#"
-        },
-        {
-          "id": "premium",
-          "title": "Plan Premium",
-          "description": "Paquete completo: corte, tintura y tratamiento capilar.",
-          "price": 80,
-          "divisa": "USD",
-          "deliveryTime": "3 horas",
-          "hirePlan": "#"
-        }
-      ],
-      "images": {
-        "status": true,
-        "galery": [
-          "../../../background.webp",
-          "../../../background.webp",
-          "../../../background.webp"
-        ]
-      }
-    },
-    "about": {
-      "curriculumVitae": "https://miwebpersonal.com/cv-maria-gonzalez.pdf",
-      "carrera": "Estilista especializada en colorimetría y tratamientos capilares.",
-      "perfil": "Soy una peluquera con amplia experiencia y formación en técnicas de corte, peinados y coloración. Mi objetivo es ofrecer un servicio de calidad que haga que cada cliente se sienta especial.",
-      "habilidades": [
-        "Cortes modernos",
-        "Peinados para eventos",
-        "Colorimetría avanzada",
-        "Tratamientos capilares",
-        "Extensiones de cabello"
-      ],
-      "idiomas": {
-        "español": "Nativo",
-        "inglés": "Intermedio (B1)",
-        "italiano": "none"
-      },
-      "educacion": [
-        {
-          "institucion": "Academia de Belleza Estilo",
-          "titulo": "Estilista Profesional",
-          "anioGraduacion": 2008
-        }
-      ],
-      "experienciaLaboral": [
-        {
-          "empresa": "Salón Estilo y Belleza",
-          "cargo": "Peluquera Principal",
-          "periodo": "2009 - 2021",
-          "responsabilidades": [
-            "Cortes y peinados personalizados.",
-            "Coloración y diseño de mechas.",
-            "Atención a clientes para eventos especiales."
-          ]
-        },
-        {
-          "empresa": "Freelance",
-          "cargo": "Peluquera",
-          "periodo": "2021 - Actualidad",
-          "responsabilidades": [
-            "Servicios a domicilio.",
-            "Asesoramiento de imagen personal."
-          ]
-        }
-      ],
-      "intereses": [
-        "Tendencias de moda",
-        "Estilismo",
-        "Fotografía de belleza",
-        "Viajes"
-      ],
-      "logros": [
-        "Primer lugar en el concurso regional de peluquería en 2020.",
-        "Reconocida por innovación en estilos en 2022."
-      ],
-      "disponibilidad": {
-        "modalidad": ["Presencial", "A domicilio"],
-        "jornada": ["Freelance", "Medio tiempo"]
-      }
-    }
-  },
-  {
-    "id": "Luis-Mendez-Electricista",
-    "name": "Luis Méndez",
-    "profileImg": "../../../perfil.webp",
-    "backgroundImg": "../../../background.webp",
-    "profession": "Electricista",
-    "category": "Home Services",
-    "location": "Avellaneda, Buenos Aires, Argentina",
-    "verify": true,
-    "contact": ["luismendez.electricista@gmail.com", "+54 11 9876 5432"],
-    "informationOfService": "Instalaciones eléctricas, reparaciones y mantenimiento.",
-    "testimonies": [
-      {
-        "client": "Hogar Familia Rojas",
-        "feedback": "Muy eficiente y profesional, resolvió nuestro problema eléctrico rápidamente.",
-        "punctuation": 5
-      },
-      {
-        "client": "Comercio El Faro",
-        "feedback": "Trabajo impecable, la instalación quedó perfecta.",
-        "punctuation": 4
-      }
-    ],
-    "achivements": [
-      "Certificado de Instalaciones Eléctricas Seguras",
-      "Más de 10 años de experiencia"
-    ],
-    "presentation": {
-      "title": "Soluciones eléctricas confiables y seguras",
-      "body": "Ofrezco servicios eléctricos de calidad, adaptados a las necesidades de cada cliente. Mi prioridad es la seguridad y el correcto funcionamiento de las instalaciones eléctricas, brindando tranquilidad y satisfacción en cada proyecto."
-    },
-    "plans": {
-      "status": true,
-      "methodOfPay": [
-        { "method": "TransferenciaBancaria" },
-        { "method": "MercadoPago" }
-      ],
-      "types": [
-        {
-          "id": "basic",
-          "title": "Plan Básico",
-          "description": "Reparación de circuitos básicos o cambio de enchufes.",
-          "price": 30,
-          "divisa": "USD",
-          "deliveryTime": "1 día",
-          "hirePlan": "#"
-        },
-        {
-          "id": "standard",
-          "title": "Plan Estándar",
-          "description": "Instalación de tomas de corriente y revisiones completas de sistema eléctrico en hogares.",
-          "price": 100,
-          "divisa": "USD",
-          "deliveryTime": "3 días",
-          "hirePlan": "#"
-        },
-        {
-          "id": "premium",
-          "title": "Plan Premium",
-          "description": "Proyecto completo de instalación eléctrica para hogares o pequeños comercios.",
-          "price": 500,
-          "divisa": "USD",
-          "deliveryTime": "7 días",
-          "hirePlan": "#"
-        }
-      ],
-      "images": {
-        "status": true,
-        "galery": [
-          "../../../background.webp",
-          "../../../background.webp",
-          "../../../background.webp"
-        ]
-      }
-    },
-    "about": {
-      "curriculumVitae": "https://miwebpersonal.com/cv-luis-mendez.pdf",
-      "carrera": "Electricista especializado en sistemas residenciales y comerciales.",
-      "perfil": "Soy un electricista experimentado con pasión por garantizar sistemas eléctricos seguros y eficientes. Mi compromiso es brindar soluciones adaptadas y de calidad a cada cliente.",
-      "habilidades": [
-        "Instalaciones eléctricas residenciales",
-        "Reparación de sistemas eléctricos",
-        "Diseño de sistemas eficientes",
-        "Instalaciones comerciales",
-        "Automatización básica"
-      ],
-      "idiomas": {
-        "español": "Nativo",
-        "inglés": "Básico (A2)",
-        "italiano": "none"
-      },
-      "educacion": [
-        {
-          "institucion": "Instituto Técnico Avellaneda",
-          "titulo": "Técnico Electricista",
-          "anioGraduacion": 2012
-        }
-      ],
-      "experienciaLaboral": [
-        {
-          "empresa": "Servicios Eléctricos Avellaneda",
-          "cargo": "Técnico Electricista",
-          "periodo": "2013 - 2020",
-          "responsabilidades": [
-            "Revisiones de sistemas eléctricos.",
-            "Instalaciones en viviendas y comercios.",
-            "Reparaciones de urgencia."
-          ]
-        },
-        {
-          "empresa": "Freelance",
-          "cargo": "Electricista",
-          "periodo": "2020 - Actualidad",
-          "responsabilidades": [
-            "Reparaciones menores a domicilio.",
-            "Instalaciones eléctricas personalizadas."
-          ]
-        }
-      ],
-      "intereses": [
-        "Energías renovables",
-        "Automatización",
-        "Tecnología eléctrica",
-        "Viajes"
-      ],
-      "logros": [
-        "Proyectos de instalaciones eléctricas en edificios residenciales.",
-        "Reconocido por soluciones innovadoras en sistemas eléctricos en 2022."
-      ],
-      "disponibilidad": {
-        "modalidad": ["Presencial", "A domicilio"],
-        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
-      }
-    }
-  },
-  {
-    "id": "Laura-Martinez-Terapeuta-Emocional",
+    "id": "Laura-Martinez-Diseñadora",
     "name": "Laura Martínez",
     "profileImg": "../../../perfil.webp",
     "backgroundImg": "../../../background.webp",
-    "profession": "Terapeuta Emocional",
-    "category": "Health & Wellness",
-    "location": "Morón, Buenos Aires, Argentina",
+    "profession": "Diseñadora Gráfica",
+    "category": "Design",
+    "location": "Madrid, España",
     "verify": true,
-    "contact": ["lauramartinez.terapia@gmail.com", "+54 11 2345 6789"],
-    "informationOfService": "Acompañamiento emocional, sesiones de terapia individual y grupal para el desarrollo personal.",
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
     "testimonies": [
       {
-        "client": "Sofía Gutiérrez",
-        "feedback": "Gracias a Laura logré superar una etapa muy difícil. Su acompañamiento fue clave.",
-        "punctuation": 5
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
       },
       {
-        "client": "Julián Torres",
-        "feedback": "Las sesiones me ayudaron a gestionar mejor mis emociones y a mejorar mis relaciones.",
-        "punctuation": 5
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
       }
     ],
     "achivements": [
-      "Certificación en Terapia de Mindfulness",
-      "Más de 8 años de experiencia como terapeuta emocional"
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
     ],
     "presentation": {
-      "title": "Tu bienestar emocional, mi prioridad",
-      "body": "Mi misión es acompañarte en tu camino hacia un equilibrio emocional y un bienestar pleno. A través de sesiones personalizadas, técnicas de mindfulness y herramientas de desarrollo personal, trabajo contigo para superar bloqueos emocionales, gestionar el estrés y encontrar mayor claridad en tu vida. Cada sesión está diseñada para crear un espacio seguro y empático donde puedas crecer y sanar."
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
     },
     "plans": {
       "status": true,
       "methodOfPay": [
         { "method": "TransferenciaBancaria" },
-        { "method": "MercadoPago" }
+        { "method": "PayPal" }
       ],
       "types": [
         {
           "id": "basic",
-          "title": "Sesión Individual",
-          "description": "Sesión de terapia individual de 1 hora para abordar temas personales específicos. Incluye técnicas de relajación y ejercicios prácticos.",
-          "price": 30,
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
           "divisa": "USD",
-          "deliveryTime": "1 hora",
+          "deliveryTime": "3 días",
           "hirePlan": "#"
         },
         {
           "id": "standard",
-          "title": "Taller Grupal",
-          "description": "Taller grupal de 2 horas enfocado en el manejo del estrés y la mejora de la autoestima. Ideal para quienes buscan apoyo en comunidad.",
-          "price": 20,
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
           "divisa": "USD",
-          "deliveryTime": "2 horas",
+          "deliveryTime": "7 días",
           "hirePlan": "#"
         },
         {
           "id": "premium",
-          "title": "Programa de Acompañamiento",
-          "description": "Paquete de 4 sesiones individuales de 1 hora cada una. Incluye seguimiento personalizado y herramientas prácticas para el desarrollo emocional.",
-          "price": 100,
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
           "divisa": "USD",
-          "deliveryTime": "4 semanas",
+          "deliveryTime": "14 días",
           "hirePlan": "#"
         }
       ],
@@ -761,15 +319,15 @@
     },
     "about": {
       "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
-      "carrera": "Terapeuta emocional especializada en desarrollo personal y gestión de emociones.",
-      "perfil": "Soy terapeuta emocional con más de 8 años de experiencia ayudando a las personas a superar retos emocionales y a descubrir su mejor versión. Mi enfoque combina técnicas tradicionales y modernas para garantizar un proceso de sanación efectivo y personalizado.",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
       "habilidades": [
-        "Gestión emocional",
-        "Mindfulness",
-        "Terapia cognitivo-conductual",
-        "Mediación emocional",
-        "Talleres de autoestima",
-        "Desarrollo personal"
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
       ],
       "idiomas": {
         "español": "Nativo",
@@ -778,52 +336,51 @@
       },
       "educacion": [
         {
-          "institucion": "Universidad de Buenos Aires (UBA)",
-          "titulo": "Licenciatura en Psicología",
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
           "anioGraduacion": 2015
         },
         {
-          "institucion": "Centro Argentino de Mindfulness",
-          "titulo": "Certificación en Mindfulness y Bienestar Emocional",
-          "anioGraduacion": 2018
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
         }
       ],
       "experienciaLaboral": [
         {
-          "empresa": "Centro de Terapias Emocionales Sanarte",
-          "cargo": "Terapeuta Emocional",
-          "periodo": "2016 - 2021",
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
           "responsabilidades": [
-            "Realización de sesiones individuales y grupales.",
-            "Creación de talleres de mindfulness y autoestima.",
-            "Acompañamiento emocional a personas en situaciones de crisis."
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
           ]
         },
         {
           "empresa": "Freelance",
-          "cargo": "Terapeuta Emocional",
-          "periodo": "2021 - Actualidad",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
           "responsabilidades": [
-            "Terapias a medida según las necesidades del cliente.",
-            "Implementación de programas de desarrollo personal.",
-            "Sesiones online y presenciales."
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
           ]
         }
       ],
       "intereses": [
-        "Mindfulness",
-        "Psicología positiva",
-        "Lectura",
-        "Viajes",
-        "Arte"
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
       ],
       "logros": [
-        "Reconocida como mejor terapeuta emocional en el centro Sanarte en 2020.",
-        "Organización de talleres masivos con más de 100 participantes."
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
       ],
       "disponibilidad": {
-        "modalidad": ["Remoto", "Presencial", "Híbrido"],
-        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
       }
     }
   }

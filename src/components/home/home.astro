@@ -1,6 +1,6 @@
 ---
 import professionals from "../../professionals/professionals.json";
-import CardHome from "../cardHome.astro";
+import CardHome from "./cardHome.astro";
 ---
 
 <section>
@@ -112,18 +112,12 @@ import CardHome from "../cardHome.astro";
   }
 </style>
 
-<script>
+<script is:inline>
   // JavaScript para aplicar el filtro
-  const filterSelect = document.getElementById(
-    "category-filter"
-  ) as HTMLSelectElement;
-  const cardsContainer = document.getElementById(
-    "cards-container"
-  ) as HTMLElement;
+  const filterSelect = document.getElementById("category-filter");
+  const cardsContainer = document.getElementById("cards-container");
 
-  const formSearchFilter = document.getElementById(
-    "search-filter"
-  ) as HTMLFormElement;
+  const formSearchFilter = document.getElementById("search-filter");
 
   filterSelect?.addEventListener("change", () => {
     const selectedCategory = filterSelect.value;
@@ -131,7 +125,7 @@ import CardHome from "../cardHome.astro";
 
     cards.forEach((card) => {
       const category = card.getAttribute("data-category");
-      (card as HTMLElement).style.display =
+      card.style.display =
         selectedCategory === "all" || category === selectedCategory
           ? ""
           : "none";
@@ -156,7 +150,7 @@ import CardHome from "../cardHome.astro";
         // Verifica si fields.filter es una cadena antes de usar toLowerCase
         const filter = fields.filter;
         if (typeof filter === "string" && profession) {
-          (card as HTMLElement).style.display =
+          card.style.display =
             filter === "all" ||
             profession.toLowerCase().includes(filter.toLowerCase().trim())
               ? ""

@@ -1,5 +1,5 @@
 ---
-import Star from "../icons/star.astro";
+import Star from "../../icons/star.astro";
 interface Props {
   name: string;
   id: string;
@@ -40,11 +40,15 @@ const promedioPuntuacion =
       <img
         src={profileImg}
         alt={`profile image of ${name}`}
-        transition:name={`img-${id}`}
+        style={`view-transition-name: ${`img-${id}`}`}
       />
       <a href={`/Profiles/${id}`} class="name-profession">
-        <h2 class="name" transition:name={`name-${id}`}>{name}</h2>
-        <span class="profession" transition:name={`profession-${id}`}
+        <h2 class="name" style={`view-transition-name: ${`name-${id}`}`}>
+          {name}
+        </h2>
+        <span
+          class="profession"
+          style={`view-transition-name: ${`profession-${id}`}`}
           >{profession}</span
         >
       </a>
@@ -53,7 +57,10 @@ const promedioPuntuacion =
     <p>{informationOfWork}</p>
   </div>
   <div class="insights">
-    <span><Star />{promedioPuntuacion} <b>({testimonies.length})</b></span>
+    <span
+      ><Star />{promedioPuntuacion.toFixed(1)}
+      <b>({testimonies.length})</b></span
+    >
     <ul>
       {
         achievements.map((achivement) => {
@@ -65,6 +72,9 @@ const promedioPuntuacion =
 </li>
 
 <style>
+  @view-transition {
+    navigation: auto;
+  }
   .card {
     display: flex;
     flex-direction: column;

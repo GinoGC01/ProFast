@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./plans.css";
-import { Paypal } from "../icons/methodOfPay/Paypal.jsx";
-import { TransferenciaBancaria } from "../icons/methodOfPay/TransferenciaBancaria.jsx";
-import { MercadoPago } from "../icons/methodOfPay/MercadoPago.jsx";
-import { useGetDollarPrice } from "../hooks/useConvertion.jsx";
-import { Efectivo } from "../icons/methodOfPay/Efectivo.jsx";
+import { Paypal } from "../../icons/methodOfPay/Paypal.jsx";
+import { TransferenciaBancaria } from "../../icons/methodOfPay/TransferenciaBancaria.jsx";
+import { MercadoPago } from "../../icons/methodOfPay/MercadoPago.jsx";
+import { useGetDollarPrice } from "../../hooks/useConvertion.jsx";
+import { Efectivo } from "../../icons/methodOfPay/Efectivo.jsx";
 
 export function Plans({ plans }) {
   const { methodOfPay, types } = plans;

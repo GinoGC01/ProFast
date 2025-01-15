@@ -2,17 +2,21 @@
   position: relative;
   z-index: 3000;
   grid-column: 2/3;
-  place-content: center;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  height: 60vh;
+  margin: auto;
+  gap: 1em;
 }
 
 .plans-container,
 .about-container {
   display: block;
-  height: 450px;
+  height: 470px;
 }
 
 .menu-content-container {
-  height: 60%;
   display: grid;
   place-content: center;
 }

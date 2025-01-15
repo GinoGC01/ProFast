@@ -1,6 +1,8 @@
-import { Education } from "../icons/react/education.jsx";
-import { Logros } from "../icons/react/logros.jsx";
+import { Education } from "../../icons/react/education.jsx";
+import { Logros } from "../../icons/react/logros.jsx";
+
 import "./about.css";
+
 export function About({ about }) {
   const {
     carrera,
@@ -17,35 +19,35 @@ export function About({ about }) {
     <section id="about">
       <h2>{carrera}</h2>
       <p>{perfil}</p>
-      <section classname="disponibilidad">
+      <section className="disponibilidad">
         <h3>Disponibilidad</h3>
-        <div classname="modalidad">
+        <div className="modalidad">
           <h4>Modalidad:</h4>
           <ul>
             {disponibilidad.modalidad.map((modalidad) => {
-              return <li>{modalidad} /</li>;
+              return <li key={modalidad}>{modalidad} /</li>;
             })}
           </ul>
         </div>
-        <div classname="jornada">
+        <div className="jornada">
           <h4>Jornada:</h4>
           <ul>
             {disponibilidad.jornada.map((jornada) => {
-              return <li>{jornada} /</li>;
+              return <li key={jornada}>{jornada} /</li>;
             })}
           </ul>
         </div>
       </section>
 
-      <section classname="habilidades">
+      <section className="habilidades">
         <h3>Habilidades</h3>
         <ul>
           {habilidades?.map((habilidad) => {
-            return <li>{habilidad}</li>;
+            return <li key={habilidad}>{habilidad}</li>;
           })}
         </ul>
       </section>
-      <section classname="idiomas">
+      <section className="idiomas">
         <h3>Idiomas</h3>
         <ul>
           {idiomas.español != "none" && (
@@ -65,16 +67,16 @@ export function About({ about }) {
           )}
         </ul>
       </section>
-      <section classname="educacion">
+      <section className="educacion">
         <h3>Educación</h3>
         <ul>
           {educacion?.map(({ institucion, titulo, anioGraduacion }) => {
             return (
-              <li>
-                <span classname="education-icon">
+              <li key={titulo}>
+                <span className="education-icon">
                   <Education />
                 </span>
-                <div classname="education-content">
+                <div className="education-content">
                   <strong>{titulo}</strong>
                   <span>{institucion}</span>
                   <span> - {anioGraduacion}</span>
@@ -84,18 +86,18 @@ export function About({ about }) {
           })}
         </ul>
       </section>
-      <section classname="experienciaLaboral">
+      <section className="experienciaLaboral">
         <h3>Experiencia Laboral</h3>
         <ul>
           {experienciaLaboral?.map(
             ({ empresa, cargo, periodo, responsabilidades }) => {
               return (
-                <li classname="exp-card">
-                  <strong classname="empresa">{empresa}</strong>
-                  <span classname="cargo">{cargo}</span>
-                  <span classname="periodo">{periodo}</span>
+                <li className="exp-card" key={`${empresa}-${cargo}`}>
+                  <strong className="empresa">{empresa}</strong>
+                  <span className="cargo">{cargo}</span>
+                  <span className="periodo">{periodo}</span>
                   <h4>Responsabilidades:</h4>
-                  <ul classname="responsabilidades">
+                  <ul className="responsabilidades">
                     {responsabilidades?.map((responsabilidad) => {
                       return <li> - {responsabilidad}</li>;
                     })}
@@ -107,12 +109,12 @@ export function About({ about }) {
         </ul>
       </section>
 
-      <section classname="logros">
+      <section className="logros">
         <h3>Logros</h3>
         <ul>
           {logros?.map((logro) => {
             return (
-              <li>
+              <li key={logro}>
                 <span>
                   <Logros />
                 </span>
@@ -122,11 +124,11 @@ export function About({ about }) {
           })}
         </ul>
       </section>
-      <section classname="intereses">
+      <section className="intereses">
         <h3>Intereses</h3>
         <ul>
           {intereses?.map((interes) => {
-            return <li>{interes}</li>;
+            return <li key={interes}>{interes}</li>;
           })}
         </ul>
       </section>
