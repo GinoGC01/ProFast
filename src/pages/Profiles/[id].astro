@@ -1,6 +1,6 @@
 ---
 import professionals from "../../professionals/professionals.json";
-import Layout from "../../layouts/Layout.astro";
+import ProfileLayout from "../../layouts/ProfileLayout.astro";
 import Check from "../../icons/check.astro";
 import CicleStar from "../../icons/circleStar.astro";
 import Location from "../../icons/location.astro";
@@ -29,86 +29,75 @@ const {
   presentation,
   plans,
   about,
+  galery,
 } = professional;
 
 const { title, body } = presentation;
 ---
 
-<Layout>
-  <section class="page-section">
-    <a href="/">ProFast</a>
-    <section class="profile-section">
-      <div class="portada">
-        <img
-          src={backgroundImg}
-          alt={`Background image of ${name} `}
-          loading="lazy"
-        />
-      </div>
-      <section class="content">
-        <header>
-          <figure>
-            <img
-              src={profileImg}
-              alt={`Profile image of ${name} `}
-              loading="lazy"
-              style={`view-transition-name: ${`img-${id}`}`}
-            />
+<ProfileLayout name={name}>
+  <section class="profile-section">
+    <div class="portada">
+      <img
+        src={backgroundImg}
+        alt={`Background image of ${name} `}
+        loading="lazy"
+      />
+    </div>
+    <section class="content">
+      <header>
+        <figure>
+          <img
+            src={profileImg}
+            alt={`Profile image of ${name} `}
+            loading="lazy"
+            style={`view-transition-name: ${`img-${id}`}`}
+          />
+          {
+            verify && (
+              <span class="verify-check">
+                <Check />
+              </span>
+            )
+          }
+        </figure>
+        <div class="data">
+          <h1 style={`view-transition-name: ${`profession-${id}`}`}>
+            {profession}
+          </h1>
+          <div class="name">
+            <h2 style={`view-transition-name: ${`name-${id}`}`}>
+              {name}
+            </h2>
             {
               verify && (
-                <span class="verify-check">
-                  <Check />
+                <span class="verificado">
+                  verificado <Check />
                 </span>
               )
             }
-          </figure>
-          <div class="data">
-            <h1 style={`view-transition-name: ${`profession-${id}`}`}>
-              {profession}
-            </h1>
-            <div class="name">
-              <h2 style={`view-transition-name: ${`name-${id}`}`}>
-                {name}
-              </h2>
-              {
-                verify && (
-                  <span class="verificado">
-                    verificado <Check />
-                  </span>
-                )
-              }
-            </div>
-            <span class="location"><Location />{location}</span>
-            <span class="logro"
-              ><CicleStar /> +{testimonies.length} clientes satisfechos</span
-            >
-            <a href="#">Contáctame</a>
           </div>
-        </header>
-        <div class="simil-about">
-          <h3>{title}</h3>
-          <p>{body}</p>
+          <span class="location"><Location />{location}</span>
+          <span class="logro"
+            ><CicleStar /> +{testimonies.length} clientes satisfechos</span
+          >
+          <a href="#">Contáctame</a>
         </div>
-      </section>
-      <Menu plans={plans} about={about} client:load />
-      <SliderTestimonies testimones={testimonies} client:load />
+      </header>
+      <div class="simil-about">
+        <h3>{title}</h3>
+        <p>{body}</p>
+      </div>
     </section>
+    <Menu plans={plans} about={about} galery={galery} client:load />
+    <SliderTestimonies testimones={testimonies} client:load />
   </section>
-</Layout>
+</ProfileLayout>
 <style>
   @view-transition {
     navigation: auto;
   }
   /* ------- */
-  .page-section > a {
-    display: block;
-    font-size: 2.5em;
-    text-align: center;
-    padding-block: 15px;
-    border-bottom: 1px solid white;
-    margin-bottom: 30px;
-    color: white;
-  }
   .profile-section {
     max-width: 80vw;
     height: 87vh;
@@ -219,6 +208,14 @@ const { title, body } = presentation;
     border-radius: 10px;
     color: black;
     font-weight: 600;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .data a:hover {
+    background-color: #14ae5c;
+    color: white;
   }
 
   .simil-about h3 {

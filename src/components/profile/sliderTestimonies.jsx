@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "./sliderTestimonies.css";
 
 // import required modules
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 export function SliderTestimonies({ testimones }) {
   return (
@@ -22,13 +22,10 @@ export function SliderTestimonies({ testimones }) {
         }}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false, // Permite que el autoplay continúe después de la interacción
+          disableOnInteraction: false,
         }}
-        navigation={{
-          enabled: true, // Habilitar navegación manual
-        }}
-        modules={[Pagination, Autoplay, Navigation]} // Incluye los módulos necesarios
-        className="mySwiper"
+        modules={[Pagination, Autoplay]}
+        className="mySwiper swiper-testimonies"
       >
         {testimones?.map((testimonie) => (
           <SwiperSlide key={testimonie.client}>

@@ -5,6 +5,7 @@
     "profileImg": "../../../perfil.webp",
     "backgroundImg": "../../../background.webp",
     "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
     "category": "Photography",
     "location": "Buenos Aires, Argentina",
     "verify": true,
@@ -117,18 +118,11 @@
           "deliveryTime": "7 días",
           "hirePlan": "#"
         }
-      ],
-      "images": {
-        "status": true,
-        "galery": [
-          "../../../background.webp",
-          "../../../background.webp",
-          "../../../background.webp"
-        ]
-      }
+      ]
     },
 
     "about": {
+      "status": true,
       "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
       "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
       "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
@@ -194,6 +188,29 @@
         "modalidad": ["Remoto", "Presencial", "Híbrido"],
         "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
       }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
     }
   },
   {
@@ -202,6 +219,7 @@
     "profileImg": "../../../perfil.webp",
     "backgroundImg": "../../../background.webp",
     "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
     "category": "Design",
     "location": "Madrid, España",
     "verify": true,
@@ -318,6 +336,7 @@
       }
     },
     "about": {
+      "status": true,
       "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
       "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
       "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
@@ -382,6 +401,3872 @@
         "modalidad": ["Remoto", "Híbrido"],
         "jornada": ["Freelance", "Tiempo completo"]
       }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Ana-Lopez-Fotografa",
+    "name": "Ana López",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Fotógrafa",
+    "pruralProfession": "Fotógrafos",
+    "category": "Photography",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["analopez@gmail.com", "+54 11 6543 2100"],
+    "informationOfService": "Fotografía profesional para eventos, productos y retratos.",
+    "testimonies": [
+      {
+        "client": "Tienda Q",
+        "feedback": "Las fotos de producto aumentaron nuestras ventas online.",
+        "punctuation": 5,
+        "date": "12/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Esteban Pérez",
+        "feedback": "Laura me ayudó a gestionar el estrés laboral y a encontrar un mejor equilibrio emocional.",
+        "punctuation": 5,
+        "date": "22/04/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Mariana Gómez",
+        "feedback": "Las sesiones grupales fueron una experiencia transformadora. Se sintió como un espacio seguro y empático.",
+        "punctuation": 5,
+        "date": "10/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Torres",
+        "feedback": "Los consejos prácticos de Laura me ayudaron a mejorar mi relación con mi familia.",
+        "punctuation": 5,
+        "date": "30/05/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Ana López",
+        "feedback": "Laura me dio las herramientas para superar una etapa de ansiedad. Su ayuda fue invaluable.",
+        "punctuation": 4,
+        "date": "15/06/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Javier Castillo",
+        "feedback": "Recomiendo completamente a Laura. Sus técnicas son efectivas y su acompañamiento es único.",
+        "punctuation": 2,
+        "date": "25/06/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Premio Nacional de Fotografía 2023",
+      "10 años de experiencia en fotografía profesional"
+    ],
+    "presentation": {
+      "title": "Momentos únicos capturados con creatividad",
+      "body": "Transformo tus recuerdos y proyectos en imágenes inolvidables, capturando la esencia de cada momento con creatividad y profesionalismo, para superar tus expectativas y reflejar tu visión de manera auténtica."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Sesión de retratos de 1 hora. Incluye 10 fotografías editadas en alta calidad y entrega digital en formato JPEG. Ideal para fotos profesionales, familiares o personales.",
+          "price": 100,
+          "divisa": "USD",
+          "deliveryTime": "2 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Fotografía de producto. Incluye la captura de hasta 10 productos, edición profesional en alta calidad y optimización para plataformas de comercio electrónico. Perfecto para tiendas online.",
+          "price": 300,
+          "divisa": "USD",
+          "deliveryTime": "5 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Cobertura completa de eventos de hasta 8 horas. Incluye edición de 50 fotos destacadas, galería online privada y entrega de todas las imágenes en alta resolución. Ideal para bodas, aniversarios o eventos empresariales.",
+          "price": 1000,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        }
+      ]
+    },
+
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-julia-perez.pdf",
+      "carrera": "Fotógrafa profesional especializada en retratos, fotografía documental y fotografía de eventos.",
+      "perfil": "Soy una fotógrafa apasionada con más de 7 años de experiencia capturando momentos únicos e irrepetibles. Mi trabajo combina un enfoque artístico y técnico, buscando siempre contar historias visuales auténticas. Estoy en búsqueda de nuevos proyectos y colaboraciones que me permitan plasmar emociones a través de mi lente.",
+      "habilidades": [
+        "Fotografía de retratos",
+        "Fotografía documental",
+        "Edición avanzada en Adobe Lightroom",
+        "Edición avanzada en Adobe Photoshop",
+        "Fotografía de eventos",
+        "Manejo de drones para fotografía aérea"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Escuela de Fotografía Creativa Andy Goldstein",
+          "titulo": "Diplomatura en Fotografía Profesional",
+          "anioGraduacion": 2016
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Fotografía Documental",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Studio 21",
+          "cargo": "Fotógrafa Principal",
+          "periodo": "2018 - 2023",
+          "responsabilidades": [
+            "Realización de sesiones fotográficas para retratos y portfolios profesionales.",
+            "Cobertura de eventos sociales como bodas, aniversarios y eventos corporativos.",
+            "Edición y postproducción de imágenes para clientes de alto perfil."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Fotógrafa",
+          "periodo": "2016 - 2018",
+          "responsabilidades": [
+            "Desarrollo de proyectos fotográficos personales y por encargo.",
+            "Fotografía de productos para pequeñas empresas locales.",
+            "Asesoramiento en la creación de campañas visuales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte visual",
+        "Viajes",
+        "Documentación cultural",
+        "Tecnología fotográfica",
+        "Medio ambiente"
+      ],
+      "logros": [
+        "Finalista en el concurso internacional 'LensCulture Portrait Awards' en 2022.",
+        "Publicación de un reportaje fotográfico en la revista 'National Geographic' en 2021."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Presencial", "Híbrido"],
+        "jornada": ["Freelance", "Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión de fotos de productos para un catálogo en línea (Plan Básico).",
+          "date": "01/10/2025",
+          "type": "producto"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Fotografía de eventos corporativos, capturando momentos clave (Plan Standard).",
+          "date": "01/22/2025",
+          "type": "eventos"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión fotográfica para una campaña publicitaria en exteriores (Plan Premium).",
+          "date": "02/05/2025",
+          "type": "publicitaria"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Laura-Martinez-Diseñadora",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Diseñadora Gráfica",
+    "pruralProfession": "Diseñadores Gráficos",
+    "category": "Design",
+    "location": "Madrid, España",
+    "verify": true,
+    "contact": ["lauramartinez@gmail.com", "+34 91 6543 2100"],
+    "informationOfService": "Diseño gráfico profesional para marcas, proyectos y campañas.",
+    "testimonies": [
+      {
+        "client": "Agencia Creativa X",
+        "feedback": "Laura nos ayudó a renovar nuestra identidad visual. ¡El cambio fue increíble!",
+        "punctuation": 5,
+        "date": "10/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Pedro Álvarez",
+        "feedback": "El logo que diseñó para mi empresa es moderno y único. ¡Recomendadísima!",
+        "punctuation": 5,
+        "date": "18/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Marta Sánchez",
+        "feedback": "Laura captó exactamente lo que necesitábamos para nuestra campaña publicitaria.",
+        "punctuation": 5,
+        "date": "25/01/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés Pérez",
+        "feedback": "El diseño de mi portafolio profesional fue impecable. Gran atención al detalle.",
+        "punctuation": 4,
+        "date": "05/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Carla Ruiz",
+        "feedback": "Gracias a sus diseños, mi marca ha logrado destacarse en el mercado.",
+        "punctuation": 5,
+        "date": "12/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Estudio ABC",
+        "feedback": "Su profesionalismo y creatividad fueron clave en nuestro éxito.",
+        "punctuation": 5,
+        "date": "20/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Diego Martínez",
+        "feedback": "Diseños de alta calidad entregados siempre a tiempo. ¡Muy profesional!",
+        "punctuation": 5,
+        "date": "28/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Gracias a su branding, mi emprendimiento ha crecido notablemente.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Ganadora del premio de diseño Red Dot 2022",
+      "Más de 8 años de experiencia en diseño gráfico"
+    ],
+    "presentation": {
+      "title": "Diseños que inspiran y marcan la diferencia",
+      "body": "Transformo ideas en diseños que conectan con las personas. Desde logotipos hasta campañas visuales completas, mi trabajo refleja creatividad y profesionalismo, siempre buscando superar expectativas."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Plan Básico",
+          "description": "Diseño de logotipo profesional con dos opciones de concepto y una revisión final. Entrega en formatos digitales listos para usar.",
+          "price": 150,
+          "divisa": "USD",
+          "deliveryTime": "3 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Plan Estándar",
+          "description": "Diseño de identidad visual básica que incluye logo, paleta de colores y tipografía para tu marca.",
+          "price": 400,
+          "divisa": "USD",
+          "deliveryTime": "7 días",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Plan Premium",
+          "description": "Desarrollo completo de branding: logotipo, papelería corporativa y manual de marca. Ideal para empresas que buscan destacar.",
+          "price": 1200,
+          "divisa": "USD",
+          "deliveryTime": "14 días",
+          "hirePlan": "#"
+        }
+      ],
+      "images": {
+        "status": true,
+        "galery": [
+          "../../../background.webp",
+          "../../../background.webp",
+          "../../../background.webp"
+        ]
+      }
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Diseñadora gráfica especializada en branding y diseño editorial.",
+      "perfil": "Soy una diseñadora apasionada con una sólida experiencia en crear marcas memorables. Mi enfoque combina estrategia y creatividad, asegurando que cada proyecto comunique de manera efectiva la esencia de la marca.",
+      "habilidades": [
+        "Diseño de logotipos",
+        "Branding y creación de identidad visual",
+        "Diseño editorial",
+        "Edición avanzada en Adobe Illustrator",
+        "Manejo de Adobe InDesign",
+        "Diseño web básico"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Avanzado (C1)",
+        "italiano": "none"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Diseño de Madrid",
+          "titulo": "Licenciatura en Diseño Gráfico",
+          "anioGraduacion": 2015
+        },
+        {
+          "institucion": "Domestika",
+          "titulo": "Curso de Branding para Empresas",
+          "anioGraduacion": 2021
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Agencia Creativa X",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2016 - 2022",
+          "responsabilidades": [
+            "Diseño de logotipos y materiales publicitarios.",
+            "Gestión de proyectos de branding completos.",
+            "Colaboración en campañas publicitarias."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseñadora Gráfica",
+          "periodo": "2022 - Presente",
+          "responsabilidades": [
+            "Diseño de identidades visuales para emprendedores.",
+            "Creación de material gráfico para redes sociales.",
+            "Asesoramiento en diseño estratégico."
+          ]
+        }
+      ],
+      "intereses": [
+        "Arte digital",
+        "Tipografía",
+        "Diseño sostenible",
+        "Viajes"
+      ],
+      "logros": [
+        "Reconocimiento en el Festival de Diseño Europeo en 2021.",
+        "Colaboraciones con marcas internacionales destacadas."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Remoto", "Híbrido"],
+        "jornada": ["Freelance", "Tiempo completo"]
+      }
+    },
+    "galery": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Diseño de logotipo para una marca de ropa local (Plan Básico).",
+          "date": "01/15/2025",
+          "type": "branding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Rediseño completo de identidad visual para una empresa de tecnología (Plan Standard).",
+          "date": "02/03/2025",
+          "type": "rebranding"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Campaña publicitaria con diseños para redes sociales y material impreso (Plan Premium).",
+          "date": "01/28/2025",
+          "type": "marketing"
+        }
+      ]
     }
   }
 ]

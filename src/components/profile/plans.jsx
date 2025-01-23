@@ -72,7 +72,10 @@ export function Plans({ plans }) {
                     <span className="price-ars">
                       ≈ {price * priceDollar} ARS
                     </span>
-                    <span>precio aproximado en pesos argentinos</span>
+                    <span>
+                      precio aproximado en pesos argentinos (1 USD ={" "}
+                      {priceDollar} ARS)
+                    </span>
                   </div>
                 </div>
                 <span>

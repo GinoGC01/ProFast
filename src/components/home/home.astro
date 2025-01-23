@@ -5,12 +5,22 @@ import CardHome from "./cardHome.astro";
 
 <section>
   <strong>ProFast</strong>
-  <div class="professionals-title-dinamyc">Todos los profesionales</div>
+  <div class="professionals-title-dinamyc">
+    <span id="all-professionals">Todas los profesionales</span>
+  </div>
   <div class="filters">
     <select id="category-filter">
       <option value="all">Todos</option>
       {
-        professionals?.map(({ category, profession }) => {
+        // Crear un conjunto para almacenar combinaciones únicas de categoría y profesión
+        Array.from(
+          new Set(
+            professionals.map(
+              ({ category, profession }) => `${category}|${profession}`
+            )
+          )
+        ).map((uniqueCombo) => {
+          const [category, profession] = uniqueCombo.split("|"); // Separar la categoría y profesión
           return <option value={category}>{profession}</option>;
         })
       }
@@ -19,8 +29,13 @@ import CardHome from "./cardHome.astro";
       <input type="text" name="filter" placeholder="Buscar por profesión..." />
       <button>Buscar</button>
     </form>
+    <span id="total-filters"></span>
   </div>
   <div class="cards-container">
+    <span style="display: none;" id="no-result"
+      >No hay resultados para tu busqueda. Revisa los filtros, ten en cuenta las
+      tildes 🫡</span
+    >
     <ul class="list-of-cards" id="cards-container">
       {
         professionals?.map(
@@ -35,6 +50,7 @@ import CardHome from "./cardHome.astro";
             profession,
             informationOfService,
             category,
+            pruralProfession,
           }) => {
             return (
               <CardHome
@@ -48,6 +64,7 @@ import CardHome from "./cardHome.astro";
                 profileImg={profileImg}
                 profession={profession}
                 informationOfWork={informationOfService}
+                pruralProfession={pruralProfession}
               />
             );
           }
@@ -63,7 +80,9 @@ import CardHome from "./cardHome.astro";
     grid-template-columns: 20em 1fr;
     grid-template-rows: 4em 1fr 2em;
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
+    gap: 1em;
+    color: white;
   }
 
   .filters {
@@ -74,6 +93,7 @@ import CardHome from "./cardHome.astro";
   .cards-container {
     grid-column: 2 / 3;
     grid-row: 2/3;
+    padding-block: 10px;
   }
 
   .list-of-cards {
@@ -113,11 +133,14 @@ import CardHome from "./cardHome.astro";
 </style>
 
 <script is:inline>
-  // JavaScript para aplicar el filtro
   const filterSelect = document.getElementById("category-filter");
   const cardsContainer = document.getElementById("cards-container");
 
   const formSearchFilter = document.getElementById("search-filter");
+
+  const spanAllProfessionals = document.getElementById("all-professionals");
+  const spanNoResult = document.getElementById("no-result");
+  const spanTotalFilters = document.getElementById("total-filters");
 
   filterSelect?.addEventListener("change", () => {
     const selectedCategory = filterSelect.value;
@@ -129,6 +152,15 @@ import CardHome from "./cardHome.astro";
         selectedCategory === "all" || category === selectedCategory
           ? ""
           : "none";
+
+      if (category === selectedCategory) {
+        const pruralProfession = card.getAttribute("data-pruralProfession");
+        spanAllProfessionals.innerText = pruralProfession;
+        spanNoResult.style.display = "none";
+      } else if (selectedCategory === "all") {
+        spanAllProfessionals.innerText = "Todos los profesionales";
+        spanNoResult.style.display = "none";
+      }
     });
   });
 
@@ -137,26 +169,43 @@ import CardHome from "./cardHome.astro";
 
     // Verifica que e.target sea un formulario
     const form = e.target instanceof HTMLFormElement ? e.target : null;
+    let contadorCards = 0;
+    let title = "";
 
     if (form) {
       const formData = new FormData(form);
       const fields = Object.fromEntries(formData);
+      const filter = fields.filter;
 
       const cards = cardsContainer.querySelectorAll(".card");
 
       cards.forEach((card) => {
         const profession = card.getAttribute("data-profession");
+        const pruralProfession = card.getAttribute("data-pruralProfession");
 
-        // Verifica si fields.filter es una cadena antes de usar toLowerCase
-        const filter = fields.filter;
-        if (typeof filter === "string" && profession) {
-          card.style.display =
-            filter === "all" ||
-            profession.toLowerCase().includes(filter.toLowerCase().trim())
-              ? ""
-              : "none";
+        const professionData = profession
+          .toLowerCase()
+          .includes(filter.toLowerCase().trim());
+        if (typeof filter === "string" && profession && filter != "") {
+          card.style.display = filter === "all" || professionData ? "" : "none";
+          if (card.style.display != "none") {
+            contadorCards += 1;
+            title = pruralProfession;
+            spanAllProfessionals.innerText = title;
+          }
         }
       });
+      if (contadorCards == 0 && filter != "") {
+        spanNoResult.style.display = "block";
+        spanAllProfessionals.innerText = "";
+      } else {
+        spanNoResult.style.display = "none";
+      }
+
+      // TO DO contador cards
+      if (contadorCards != 0) {
+        spanTotalFilters.innerText = `Resultados de la busqueda: (${contadorCards})`;
+      }
     }
   });
 </script>

@@ -11,6 +11,7 @@ interface Props {
   testimonies: { client: string; feedback: string; punctuation: number }[]; // Arreglo de objetos con propiedades específicas
   achievements: string[];
   category: string;
+  pruralProfession: string;
 }
 const {
   name,
@@ -23,6 +24,7 @@ const {
   testimonies,
   achievements,
   category,
+  pruralProfession,
 } = Astro.props;
 
 const promedioPuntuacion =
@@ -31,7 +33,12 @@ const promedioPuntuacion =
   }, 0) / testimonies.length;
 ---
 
-<li class="card" data-category={category} data-profession={profession}>
+<li
+  class="card"
+  data-category={category}
+  data-profession={profession}
+  data-pruralProfession={pruralProfession}
+>
   <figure>
     <img src={backgroundImg} alt={`background image of ${name}`} />
   </figure>
