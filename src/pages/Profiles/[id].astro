@@ -1,11 +1,8 @@
 ---
 import professionals from "../../professionals/professionals.json";
 import ProfileLayout from "../../layouts/ProfileLayout.astro";
-import Check from "../../icons/check.astro";
-import CicleStar from "../../icons/circleStar.astro";
-import Location from "../../icons/location.astro";
-import { Menu } from "../../components/profile/menu.jsx";
-import { SliderTestimonies } from "../../components/profile/sliderTestimonies.jsx";
+import Professional from "../../components/profileTypes/professional.astro";
+import AgencieAndCompany from "../../components/profileTypes/agencieAndCompany.astro";
 
 export const prerender = true;
 
@@ -17,217 +14,21 @@ export const getStaticPaths = () => {
 };
 
 const { professional } = Astro.props;
-const {
-  id,
-  name,
-  backgroundImg,
-  profileImg,
-  profession,
-  location,
-  testimonies,
-  verify,
-  presentation,
-  plans,
-  about,
-  galery,
-} = professional;
+const {name, profileType} = professional
 
-const { title, body } = presentation;
+let profileTypeStatus = ""
+
+if(profileType == "professional"){
+  profileTypeStatus = "professional"
+}else if(profileType == "agencieAndCompany"){
+  profileTypeStatus = 'agencieAndCompany'
+}
+
+
 ---
 
 <ProfileLayout name={name}>
-  <section class="profile-section">
-    <div class="portada">
-      <img
-        src={backgroundImg}
-        alt={`Background image of ${name} `}
-        loading="lazy"
-      />
-    </div>
-    <section class="content">
-      <header>
-        <figure>
-          <img
-            src={profileImg}
-            alt={`Profile image of ${name} `}
-            loading="lazy"
-            style={`view-transition-name: ${`img-${id}`}`}
-          />
-          {
-            verify && (
-              <span class="verify-check">
-                <Check />
-              </span>
-            )
-          }
-        </figure>
-        <div class="data">
-          <h1 style={`view-transition-name: ${`profession-${id}`}`}>
-            {profession}
-          </h1>
-          <div class="name">
-            <h2 style={`view-transition-name: ${`name-${id}`}`}>
-              {name}
-            </h2>
-            {
-              verify && (
-                <span class="verificado">
-                  verificado <Check />
-                </span>
-              )
-            }
-          </div>
-          <span class="location"><Location />{location}</span>
-          <span class="logro"
-            ><CicleStar /> +{testimonies.length} clientes satisfechos</span
-          >
-          <a href="#">Contáctame</a>
-        </div>
-      </header>
-      <div class="simil-about">
-        <h3>{title}</h3>
-        <p>{body}</p>
-      </div>
-    </section>
-    <Menu plans={plans} about={about} galery={galery} client:load />
-    <SliderTestimonies testimones={testimonies} client:load />
-  </section>
+ {profileTypeStatus == "professional" && <Professional professional={professional}/>}
+ {profileTypeStatus == "agencieAndCompany" && <AgencieAndCompany professional={professional}/>}
 </ProfileLayout>
-<style>
-  @view-transition {
-    navigation: auto;
-  }
-  /* ------- */
-  .profile-section {
-    max-width: 80vw;
-    height: 87vh;
-    position: relative;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 50% 45%;
-    grid-template-rows: 40% 30% 30%;
-    gap: 1em;
-  }
-  .portada {
-    width: 100%;
-    height: 35.5vh;
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-  }
 
-  .portada img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .content {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    position: relative;
-    z-index: 2000;
-    padding-left: 30px;
-    place-content: center;
-    transform: translateY(-200px);
-  }
-
-  .content header {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .content figure {
-    position: relative;
-    width: 13rem;
-    height: 13rem;
-  }
-
-  .content figure img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .verify-check {
-    position: absolute;
-    width: 2.5em;
-    height: 2.5em;
-    display: grid;
-    place-content: center;
-    bottom: 10px;
-    right: 25px;
-    background-color: #14ae5c;
-    border-radius: 50%;
-  }
-
-  .name {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .data h1 {
-    font-size: 1.3em;
-    color: #d9d9d9;
-  }
-
-  .data h2 {
-    font-size: 3em;
-    color: white;
-  }
-
-  .location,
-  .logro {
-    display: inline-flex;
-    color: #a8a8a8;
-    gap: 0.2em;
-    margin-right: 10px;
-  }
-
-  .verificado {
-    display: flex;
-    align-items: center;
-    gap: 0.3em;
-    padding: 5px 20px;
-    background-color: #14ae5c;
-    color: white;
-    border-radius: 20px;
-    font-size: 0.8em;
-  }
-
-  .data a {
-    display: block;
-    padding: 10px 40px;
-    margin-top: 10px;
-    background-color: #d9d9d9;
-    width: fit-content;
-    border-radius: 10px;
-    color: black;
-    font-weight: 600;
-    transition:
-      background-color 0.2s,
-      color 0.2s;
-  }
-
-  .data a:hover {
-    background-color: #14ae5c;
-    color: white;
-  }
-
-  .simil-about h3 {
-    color: white;
-    font-size: 1.7em;
-    font-weight: bolder;
-    padding-block: 20px;
-  }
-
-  .simil-about p {
-    color: #d9d9d9;
-    line-height: 1.7;
-    font-size: 1.1em;
-  }
-</style>

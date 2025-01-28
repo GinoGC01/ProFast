@@ -34,7 +34,7 @@ import CardHome from "./cardHome.astro";
   <div class="cards-container">
     <span style="display: none;" id="no-result"
       >No hay resultados para tu busqueda. Revisa los filtros, ten en cuenta las
-      tildes 🫡</span
+      tíldes 🤓</span
     >
     <ul class="list-of-cards" id="cards-container">
       {
@@ -100,7 +100,7 @@ import CardHome from "./cardHome.astro";
     width: 100%;
     display: grid;
     gap: 1em;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     padding: 0.5em 1em;
     max-height: 90vh;
     overflow-y: scroll;
@@ -145,6 +145,8 @@ import CardHome from "./cardHome.astro";
   filterSelect?.addEventListener("change", () => {
     const selectedCategory = filterSelect.value;
     const cards = cardsContainer.querySelectorAll(".card");
+    let contadorCards = 0;
+
 
     cards.forEach((card) => {
       const category = card.getAttribute("data-category");
@@ -161,7 +163,14 @@ import CardHome from "./cardHome.astro";
         spanAllProfessionals.innerText = "Todos los profesionales";
         spanNoResult.style.display = "none";
       }
+      if (card.style.display != "none") {
+            contadorCards += 1;
+      }
     });
+    // TO DO contador cards
+    if (contadorCards != 0) {
+        spanTotalFilters.innerText = `Resultados de la busqueda: (${contadorCards})`;
+      }
   });
 
   formSearchFilter.addEventListener("submit", (e) => {

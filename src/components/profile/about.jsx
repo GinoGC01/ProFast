@@ -1,7 +1,7 @@
-import { Education } from "../../icons/react/education.jsx";
-import { Logros } from "../../icons/react/logros.jsx";
+import { Education } from '../../icons/react/education.jsx'
+import { Logros } from '../../icons/react/logros.jsx'
 
-import "./about.css";
+import './about.css'
 
 export function About({ about }) {
   const {
@@ -14,7 +14,7 @@ export function About({ about }) {
     intereses,
     logros,
     disponibilidad,
-  } = about;
+  } = about
   return (
     <section id="about">
       <h2>{carrera}</h2>
@@ -25,7 +25,7 @@ export function About({ about }) {
           <h4>Modalidad:</h4>
           <ul>
             {disponibilidad.modalidad.map((modalidad) => {
-              return <li key={modalidad}>{modalidad} /</li>;
+              return <li key={modalidad}>{modalidad} /</li>
             })}
           </ul>
         </div>
@@ -33,7 +33,7 @@ export function About({ about }) {
           <h4>Jornada:</h4>
           <ul>
             {disponibilidad.jornada.map((jornada) => {
-              return <li key={jornada}>{jornada} /</li>;
+              return <li key={jornada}>{jornada} /</li>
             })}
           </ul>
         </div>
@@ -43,24 +43,24 @@ export function About({ about }) {
         <h3>Habilidades</h3>
         <ul>
           {habilidades?.map((habilidad) => {
-            return <li key={habilidad}>{habilidad}</li>;
+            return <li key={habilidad}>{habilidad}</li>
           })}
         </ul>
       </section>
       <section className="idiomas">
         <h3>Idiomas</h3>
         <ul>
-          {idiomas.español != "none" && (
+          {idiomas.español != 'none' && (
             <li>
               Español: <span>{idiomas.español}</span>
             </li>
           )}
-          {idiomas.inglés != "none" && (
+          {idiomas.inglés != 'none' && (
             <li>
               Inglés: <span>{idiomas.inglés}</span>
             </li>
           )}
-          {idiomas.italiano != "none" && (
+          {idiomas.italiano != 'none' && (
             <li>
               Italiano: <span>{idiomas.italiano}</span>
             </li>
@@ -82,7 +82,7 @@ export function About({ about }) {
                   <span> - {anioGraduacion}</span>
                 </div>
               </li>
-            );
+            )
           })}
         </ul>
       </section>
@@ -99,11 +99,11 @@ export function About({ about }) {
                   <h4>Responsabilidades:</h4>
                   <ul className="responsabilidades">
                     {responsabilidades?.map((responsabilidad) => {
-                      return <li> - {responsabilidad}</li>;
+                      return <li> - {responsabilidad}</li>
                     })}
                   </ul>
                 </li>
-              );
+              )
             }
           )}
         </ul>
@@ -120,7 +120,7 @@ export function About({ about }) {
                 </span>
                 {logro}
               </li>
-            );
+            )
           })}
         </ul>
       </section>
@@ -128,10 +128,10 @@ export function About({ about }) {
         <h3>Intereses</h3>
         <ul>
           {intereses?.map((interes) => {
-            return <li key={interes}>{interes}</li>;
+            return <li key={interes}>{interes}</li>
           })}
         </ul>
       </section>
     </section>
-  );
+  )
 }

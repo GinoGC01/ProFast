@@ -31,7 +31,9 @@
   background-color: #d9d9d9;
   color: #131313;
   font-size: 0.9em;
-  transition: background-color 0.2s, color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 .buttons-plans .active {
@@ -101,7 +103,9 @@
   color: #d9d9d9;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 #plans a:hover {

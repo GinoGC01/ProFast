@@ -1,51 +1,51 @@
-import { useState } from "react";
-import "./plans.css";
-import { Paypal } from "../../icons/methodOfPay/Paypal.jsx";
-import { TransferenciaBancaria } from "../../icons/methodOfPay/TransferenciaBancaria.jsx";
-import { MercadoPago } from "../../icons/methodOfPay/MercadoPago.jsx";
-import { useGetDollarPrice } from "../../hooks/useConvertion.jsx";
-import { Efectivo } from "../../icons/methodOfPay/Efectivo.jsx";
+import { useState } from 'react'
+import './plans.css'
+import { Paypal } from '../../icons/methodOfPay/Paypal.jsx'
+import { TransferenciaBancaria } from '../../icons/methodOfPay/TransferenciaBancaria.jsx'
+import { MercadoPago } from '../../icons/methodOfPay/MercadoPago.jsx'
+import { useGetDollarPrice } from '../../hooks/useConvertion.jsx'
+import { Efectivo } from '../../icons/methodOfPay/Efectivo.jsx'
 
 export function Plans({ plans }) {
-  const { methodOfPay, types } = plans;
-  const { price: priceDollar } = useGetDollarPrice();
+  const { methodOfPay, types } = plans
+  const { price: priceDollar } = useGetDollarPrice()
 
-  const [activeTab, setActiveTab] = useState("standard");
+  const [activeTab, setActiveTab] = useState('standard')
 
-  const handleOpen = (tab) => setActiveTab(tab);
+  const handleOpen = (tab) => setActiveTab(tab)
 
-  const getButtonClass = (tab) => (activeTab === tab ? `${tab} active` : tab);
+  const getButtonClass = (tab) => (activeTab === tab ? `${tab} active` : tab)
 
-  const filteredPlans = types?.filter((plan) => plan.id === activeTab);
+  const filteredPlans = types?.filter((plan) => plan.id === activeTab)
 
   const METHOD_ICONS = {
     PayPal: Paypal,
     TransferenciaBancaria,
     MercadoPago,
     Efectivo,
-  };
+  }
 
   return (
     <section id="plans">
       <div className="buttons-plans">
         <button
           id="btn-basic"
-          className={getButtonClass("basic")}
-          onClick={() => handleOpen("basic")}
+          className={getButtonClass('basic')}
+          onClick={() => handleOpen('basic')}
         >
           Plan básico
         </button>
         <button
           id="btn-standard"
-          className={getButtonClass("standard")}
-          onClick={() => handleOpen("standard")}
+          className={getButtonClass('standard')}
+          onClick={() => handleOpen('standard')}
         >
           Plan standard
         </button>
         <button
           id="btn-premium"
-          className={getButtonClass("premium")}
-          onClick={() => handleOpen("premium")}
+          className={getButtonClass('premium')}
+          onClick={() => handleOpen('premium')}
         >
           Plan premium
         </button>
@@ -73,7 +73,7 @@ export function Plans({ plans }) {
                       ≈ {price * priceDollar} ARS
                     </span>
                     <span>
-                      precio aproximado en pesos argentinos (1 USD ={" "}
+                      precio aproximado en pesos argentinos (1 USD ={' '}
                       {priceDollar} ARS)
                     </span>
                   </div>
@@ -85,26 +85,26 @@ export function Plans({ plans }) {
                 <h4>Metodos de pago</h4>
                 <ul className="methodOfPay">
                   {methodOfPay?.map(({ method }) => {
-                    const iconName = method === "Paypal" ? "Paypal" : method;
-                    const Icon = METHOD_ICONS[iconName];
+                    const iconName = method === 'Paypal' ? 'Paypal' : method
+                    const Icon = METHOD_ICONS[iconName]
                     return (
                       <li key={method}>
                         {Icon && <Icon />}
                         <span>
-                          {method == "TransferenciaBancaria"
-                            ? "Transferencia Bancaria"
+                          {method == 'TransferenciaBancaria'
+                            ? 'Transferencia Bancaria'
                             : method}
                         </span>
                       </li>
-                    );
+                    )
                   })}
                 </ul>
                 <a href={hirePlan}>Contratar {title}</a>
               </div>
-            );
+            )
           }
         )}
       </div>
     </section>
-  );
+  )
 }

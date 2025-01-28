@@ -1,4 +1,4 @@
-import "./galery.css";
+import './galery.css'
 
 export function GaleryCard({ img }) {
   return (
@@ -14,5 +14,5 @@ export function GaleryCard({ img }) {
         <p className="description">{img.description}</p>
       </div>
     </div>
-  );
+  )
 }

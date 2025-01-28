@@ -1,13 +1,13 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { GaleryCard } from "./galeryCard.jsx";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { GaleryCard } from './galeryCard.jsx'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "./galery.css";
+import 'swiper/css'
+import 'swiper/css/navigation'
+import './galery.css'
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation } from 'swiper/modules'
 
 export function Galery({ galery }) {
   return (
@@ -23,9 +23,9 @@ export function Galery({ galery }) {
             <SwiperSlide key={index}>
               <GaleryCard img={img} />
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
     </section>
-  );
+  )
 }

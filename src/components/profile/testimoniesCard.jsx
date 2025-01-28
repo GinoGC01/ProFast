@@ -1,10 +1,10 @@
-import { StarRating } from "../utils/StarRating.jsx";
-import { User } from "../../icons/react/user.jsx";
-import { GoogleIcon } from "../../icons/react/google";
-import "./testimoniesCard.css";
+import { StarRating } from '../utils/StarRating.jsx'
+import { User } from '../../icons/react/user.jsx'
+import { GoogleIcon } from '../../icons/react/google'
+import './testimoniesCard.css'
 
 export function TestimoniesCard({ testimonie }) {
-  const { client, feedback, punctuation, date, profileImg } = testimonie;
+  const { client, feedback, punctuation, date, profileImg } = testimonie
   return (
     <div className="card-container">
       <figure>
@@ -34,5 +34,5 @@ export function TestimoniesCard({ testimonie }) {
         <p>{feedback}</p>
       </div>
     </div>
-  );
+  )
 }

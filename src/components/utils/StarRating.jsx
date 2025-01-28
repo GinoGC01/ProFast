@@ -1,5 +1,5 @@
-import "./starRating.css";
-import { Star } from "../../icons/react/star.jsx";
+import './starRating.css'
+import { Star } from '../../icons/react/star.jsx'
 
 export const StarRating = ({ rating }) => {
   return (
@@ -8,5 +8,5 @@ export const StarRating = ({ rating }) => {
         <Star key={star} filled={star <= rating} />
       ))}
     </div>
-  );
-};
+  )
+}

@@ -1,12 +1,15 @@
 import { useState } from 'react'
-import './menu.css'
-import { Plans } from './plans.jsx'
-import { About } from './about.jsx'
 import { Galery } from './galery.jsx'
 import { ButtonMenu } from './buttonMenu.jsx'
 
-export function Menu({ plans, about, portfolio, buttons }) {
-  const [activeTab, setActiveTab] = useState('plans')
+export function MenuagencieAndCompany({
+  about,
+  portfolio,
+  buttons,
+  services,
+  professionals,
+}) {
+  const [activeTab, setActiveTab] = useState('services')
 
   const handleOpen = (tab) => {
     setActiveTab(tab)
@@ -30,14 +33,22 @@ export function Menu({ plans, about, portfolio, buttons }) {
         })}
       </div>
       <div className="menu-content-container">
-        {activeTab === 'plans' && plans.status && (
-          <div id="plans-container" className="plans-container">
-            <Plans plans={plans} />
+        {activeTab === 'services' && services.status && (
+          <div id="services-container" className="services-container">
+            services
+          </div>
+        )}
+        {activeTab === 'professionals' && professionals.status && (
+          <div id="professionals-container" className="professionals-container">
+            professionals
           </div>
         )}
         {activeTab === 'about' && about.status && (
-          <div id="about-container" className="about-container">
-            <About about={about} />
+          <div
+            id="about-agencieAndCompany-container"
+            className="about-agencieAndCompany-container"
+          >
+            about
           </div>
         )}
         {activeTab === 'galery' && portfolio.status && (

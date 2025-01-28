@@ -1,21 +1,21 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { TestimoniesCard } from "./testimoniesCard";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { TestimoniesCard } from './testimoniesCard'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css'
+import 'swiper/css/pagination'
 
-import "./sliderTestimonies.css";
+import './sliderTestimonies.css'
 
 // import required modules
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from 'swiper/modules'
 
 export function SliderTestimonies({ testimones }) {
   return (
     <>
       <Swiper
-        slidesPerView={"auto"}
+        slidesPerView={'auto'}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -34,5 +34,5 @@ export function SliderTestimonies({ testimones }) {
         ))}
       </Swiper>
     </>
-  );
+  )
 }

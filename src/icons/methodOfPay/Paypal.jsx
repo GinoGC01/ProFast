@@ -6,5 +6,5 @@ export function Paypal() {
         fill="#ffffff"
       ></path>
     </svg>
-  );
+  )
 }
