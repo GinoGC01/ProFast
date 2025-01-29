@@ -94,7 +94,8 @@
   text-decoration: underline;
 }
 
-#plans a {
+#plans a,
+.data-CardServiceArrayCard a {
   display: block;
   margin-block: 20px;
   padding-block: 15px;
@@ -108,7 +109,8 @@
     color 0.2s;
 }
 
-#plans a:hover {
+#plans a:hover,
+.data-CardServiceArrayCard a:hover {
   background-color: #14ae5c;
 }
 

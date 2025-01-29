@@ -1,0 +1,50 @@
+.servicesArrayCard{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.servicesArrayCard strong{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* serviceCard */
+.CardServiceArrayCard,
+.servicesObjectCard{
+    border: 1px solid grey;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.arrow-CardServiceArrayCard{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    transition: transform .5s;
+}
+
+.arrowReverse-CardServiceArrayCard{
+    transform: rotate(180deg);
+}
+
+.title_serviceCard{
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.data-CardServiceArrayCard {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  
+  .data-expanded {
+    max-height: 500px; /* Ajusta este valor según sea necesario */
+  }
+
+.data-CardServiceArrayCard p{
+    margin-bottom: 10px
+}

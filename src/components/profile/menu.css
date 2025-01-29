@@ -12,7 +12,10 @@
 
 .plans-container,
 .about-container,
-.galery-container {
+.galery-container,
+.about-agencieAndCompany-container,
+.professionals-container,
+.services-container {
   display: block;
   height: 470px;
 }
@@ -48,4 +51,46 @@
 .active {
   scale: 1.05;
   background-color: #0e0e0e;
+}
+
+
+#about-agencieAndCompany-container,
+#professionals-container,
+#services-container{
+  width: 650px;
+  min-height: 450px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin: auto;
+  padding: 20px;
+  color: #f1f1f1;
+  border-radius: 10px;
+}
+
+#services-container{
+  overflow-y: scroll;
+}
+
+/* width */
+#about::-webkit-scrollbar,
+#services-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+#about::-webkit-scrollbar-track,
+#services-container::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+#about::-webkit-scrollbar-thumb,
+#services-container::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+#about::-webkit-scrollbar-thumb:hover,
+#services-container::-webkit-scrollbar-thumb:hover {
+  background: #d3d3d3;
 }

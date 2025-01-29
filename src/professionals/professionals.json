@@ -569,97 +569,104 @@
     "pruralProfession": "Consultorios Médicos",
     "services": {
       "status": true,
-      "services": [
-        {
-          "estudiosClinicos": [
-            {
-              "description": "Análisis completo de sangre para evaluar niveles de glucosa, colesterol, hemograma, etc.",
-              "divisa": "USD",
-              "duracionResultados": "24-48 horas",
-              "id": "analisis-sangre",
-              "price": 50,
-              "title": "Análisis de Sangre"
-            },
-            {
-              "description": "Radiografías para diagnóstico de fracturas, lesiones o enfermedades óseas.",
-              "divisa": "USD",
-              "duracionResultados": "1-2 horas",
-              "id": "radiografia",
-              "price": 70,
-              "title": "Radiografía"
-            }
-          ]
+      "services": { 
+        "Clínico": [
+          {
+            "description": "Análisis completo de sangre para evaluar niveles de glucosa, colesterol, hemograma, etc.",
+            "divisa": "USD",
+            "duracionResultados": "24 - 48 horas",
+            "id": "analisis-sangre",
+            "price": 50,
+            "title": "Análisis de Sangre",
+            "contacto":""
+          },
+          {
+            "description": "Radiografías para diagnóstico de fracturas, lesiones o enfermedades óseas.",
+            "divisa": "USD",
+            "duracionResultados": "1 - 2 horas",
+            "id": "radiografia",
+            "price": 70,
+            "title": "Radiografía",
+            "contacto":""
+          }
+        ],
+      
+      
+        "extraccionSangre": {
+          "description": "Servicio de extracción de sangre para análisis clínicos. Realizado por profesionales capacitados.",
+          "divisa": "USD",
+          "duration": "30 minutos",
+          "id": "extraccion-sangre",
+          "preparacion": "Ayuno de 8 horas recomendado.",
+          "price": 30,
+          "title": "Extracción de Sangre",
+          "contacto":""
         },
-        {
-          "extraccionSangre": {
-            "description": "Servicio de extracción de sangre para análisis clínicos. Realizado por profesionales capacitados.",
+      
+      
+        "pediatria": {
+          "description": "Atención médica especializada para niños y adolescentes. Control de crecimiento, vacunación y tratamiento de enfermedades infantiles.",
+          "divisa": "USD",
+          "duration": "45 minutos",
+          "id": "consulta-pediatria",
+          "price": 60,
+          "title": "Consulta Pediátrica",
+            "contacto":""
+        },
+
+        "Terapias": [
+          {
+            "description": "Sesiones de terapia psicológica individual para tratar ansiedad, depresión y otros trastornos emocionales.",
+            "divisa": "USD",
+            "duration": "1 hora",
+            "id": "terapia-individual",
+            "price": 80,
+            "title": "Terapia Individual",
+            "contacto":""
+          },
+          {
+            "description": "Sesiones de terapia en grupo para fomentar el apoyo mutuo y la resolución de problemas en conjunto.",
+            "divisa": "USD",
+            "duration": "1.5 horas",
+            "id": "terapia-grupal",
+            "price": 50,
+            "title": "Terapia Grupal",
+            "contacto":""
+          },
+          {
+            "description": "Sesiones de terapia familiar para mejorar la comunicación y resolver conflictos dentro del núcleo familiar.",
+            "divisa": "USD",
+            "duration": "1.5 horas",
+            "id": "terapia-familiar",
+            "price": 100,
+            "title": "Terapia Familiar",
+            "contacto":""
+          }
+        ],
+
+
+        "Otros": [
+          {
+            "description": "Aplicación de vacunas para niños y adultos, incluyendo vacunas contra la influenza, hepatitis, etc.",
             "divisa": "USD",
             "duration": "30 minutos",
-            "id": "extraccion-sangre",
-            "preparacion": "Ayuno de 8 horas recomendado.",
-            "price": 30,
-            "title": "Extracción de Sangre"
-          }
-        },
-        {
-          "otrosServicios": [
-            {
-              "description": "Aplicación de vacunas para niños y adultos, incluyendo vacunas contra la influenza, hepatitis, etc.",
-              "divisa": "USD",
-              "duration": "30 minutos",
-              "id": "vacunacion",
-              "price": 40,
-              "title": "Vacunación"
-            },
-            {
-              "description": "Estudio para evaluar la actividad eléctrica del corazón y detectar posibles anomalías.",
-              "divisa": "USD",
-              "duracionResultados": "1 hora",
-              "id": "electrocardiograma",
-              "price": 90,
-              "title": "Electrocardiograma"
-            }
-          ]
-        },
-        {
-          "pediatria": {
-            "description": "Atención médica especializada para niños y adolescentes. Control de crecimiento, vacunación y tratamiento de enfermedades infantiles.",
+            "id": "vacunacion",
+            "price": 40,
+            "title": "Vacunación",
+            "contacto":""
+          },
+          {
+            "description": "Estudio para evaluar la actividad eléctrica del corazón y detectar posibles anomalías.",
             "divisa": "USD",
-            "duration": "45 minutos",
-            "id": "consulta-pediatria",
-            "price": 60,
-            "title": "Consulta Pediátrica"
+            "duracionResultados": "1 hora",
+            "id": "electrocardiograma",
+            "price": 90,
+            "title": "Electrocardiograma",
+            "contacto":""
           }
-        },
-        {
-          "terapias": [
-            {
-              "description": "Sesiones de terapia psicológica individual para tratar ansiedad, depresión y otros trastornos emocionales.",
-              "divisa": "USD",
-              "duration": "1 hora",
-              "id": "terapia-individual",
-              "price": 80,
-              "title": "Terapia Individual"
-            },
-            {
-              "description": "Sesiones de terapia en grupo para fomentar el apoyo mutuo y la resolución de problemas en conjunto.",
-              "divisa": "USD",
-              "duration": "1.5 horas",
-              "id": "terapia-grupal",
-              "price": 50,
-              "title": "Terapia Grupal"
-            },
-            {
-              "description": "Sesiones de terapia familiar para mejorar la comunicación y resolver conflictos dentro del núcleo familiar.",
-              "divisa": "USD",
-              "duration": "1.5 horas",
-              "id": "terapia-familiar",
-              "price": 100,
-              "title": "Terapia Familiar"
-            }
-          ]
-        }
-      ]
+        ]
+      
+    }
     },
     "testimonies": [
       {
