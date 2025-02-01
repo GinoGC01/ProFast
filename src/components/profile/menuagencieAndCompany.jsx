@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Galery } from './galery.jsx'
 import { ButtonMenu } from './buttonMenu.jsx'
 import { Services } from './services.jsx'
+import { ProfessionalsAgencieAndCompany } from './professionalsAgencieAndCompany.jsx'
 
 export function MenuagencieAndCompany({
   about,
@@ -41,7 +42,7 @@ export function MenuagencieAndCompany({
         )}
         {activeTab === 'professionals' && professionals.status && (
           <div id="professionals-container" className="professionals-container">
-            professionals
+            <ProfessionalsAgencieAndCompany professionals={professionals} />
           </div>
         )}
         {activeTab === 'about' && about.status && (

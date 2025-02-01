@@ -10,18 +10,24 @@
 }
 
 /* serviceCard */
-.CardServiceArrayCard,
-.servicesObjectCard{
-    border: 1px solid grey;
+.CardServiceArrayCard{
+    border: 1px solid #808080;
     cursor: pointer;
     position: relative;
     padding: 10px;
     margin-block: 10px;
+    transition: scale .2s, background-color .2s;
+}
+
+.CardServiceArrayCard:hover{
+    scale: 1.02;
+    border: 1px solid #80808085;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .arrow-CardServiceArrayCard{
     position: absolute;
-    right: 20px;
+    right: 5px;
     top: 5px;
     transition: transform .5s;
 }
@@ -42,7 +48,7 @@
   }
   
   .data-expanded {
-    max-height: 500px; /* Ajusta este valor según sea necesario */
+    max-height: 500px;
   }
 
 .data-CardServiceArrayCard p{

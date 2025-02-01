@@ -448,6 +448,168 @@
     "verify": true
   },
   {
+    "id": "Laura-Martinez-Psicologa",
+    "name": "Laura Martínez",
+    "profileImg": "../../../perfil.webp",
+    "backgroundImg": "../../../background.webp",
+    "profession": "Psicóloga",
+    "pruralProfession": "Psicólogos",
+    "profileType": "professional",
+    "category": "Salud Mental",
+    "location": "Buenos Aires, Argentina",
+    "verify": true,
+    "contact": ["lauramartinez@psicologia.com", "+54 11 7654 3210"],
+    "informationOfService": "Terapia cognitivo-conductual especializada en ansiedad, depresión y manejo del estrés. Sesiones individuales y grupales.",
+    "testimonies": [
+      {
+        "client": "Carla Rodríguez",
+        "feedback": "Gracias a las sesiones con Laura logré mejorar mi autoestima y sentirme más segura de mí misma.",
+        "punctuation": 5,
+        "date": "15/02/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Andrés López",
+        "feedback": "Laura tiene una habilidad increíble para escuchar y guiarte hacia soluciones prácticas.",
+        "punctuation": 5,
+        "date": "05/03/2025",
+        "profileImg": "../../../perfil.webp"
+      },
+      {
+        "client": "Lucía Fernández",
+        "feedback": "Las técnicas de mindfulness que aprendí en sus talleres me cambiaron la vida.",
+        "punctuation": 5,
+        "date": "18/03/2025",
+        "profileImg": "../../../perfil.webp"
+      }
+    ],
+    "achivements": [
+      "Más de 10 años de experiencia en terapia cognitivo-conductual.",
+      "Certificada por la Asociación Argentina de Terapia Cognitiva (AATC).",
+      "Ponente en el Congreso Internacional de Psicología 2023."
+    ],
+    "presentation": {
+      "title": "Bienestar emocional a través de la terapia cognitivo-conductual",
+      "body": "Ofrezco un espacio seguro y confidencial para trabajar en tu bienestar emocional. Mi enfoque se basa en la terapia cognitivo-conductual, ayudándote a identificar y cambiar patrones de pensamiento negativos para mejorar tu calidad de vida."
+    },
+    "plans": {
+      "status": true,
+      "methodOfPay": [
+        { "method": "TransferenciaBancaria" },
+        { "method": "PayPal" }
+      ],
+      "types": [
+        {
+          "id": "basic",
+          "title": "Terapia Individual",
+          "description": "Sesiones personalizadas de terapia cognitivo-conductual para trabajar en problemas específicos como ansiedad, depresión o estrés.",
+          "price": 80,
+          "divisa": "USD",
+          "duration": "1 hora",
+          "hirePlan": "#"
+        },
+        {
+          "id": "standard",
+          "title": "Terapia Grupal",
+          "description": "Sesiones en grupo para fomentar el apoyo mutuo y aprender técnicas de manejo emocional en un entorno seguro.",
+          "price": 50,
+          "divisa": "USD",
+          "duration": "1.5 horas",
+          "hirePlan": "#"
+        },
+        {
+          "id": "premium",
+          "title": "Taller de Mindfulness",
+          "description": "Talleres prácticos para aprender técnicas de mindfulness y meditación que ayudan a reducir el estrés y mejorar la concentración.",
+          "price": 40,
+          "divisa": "USD",
+          "duration": "2 horas",
+          "hirePlan": "#"
+        }
+      ]
+    },
+    "about": {
+      "status": true,
+      "curriculumVitae": "https://miwebpersonal.com/cv-laura-martinez.pdf",
+      "carrera": "Psicóloga especializada en terapia cognitivo-conductual y mindfulness.",
+      "perfil": "Soy una psicóloga con más de 10 años de experiencia en el tratamiento de ansiedad, depresión y manejo del estrés. Mi enfoque se centra en brindar herramientas prácticas para mejorar la calidad de vida de mis pacientes.",
+      "habilidades": [
+        "Terapia cognitivo-conductual",
+        "Mindfulness y meditación",
+        "Manejo del estrés y la ansiedad",
+        "Terapia individual y grupal",
+        "Psicoeducación"
+      ],
+      "idiomas": {
+        "español": "Nativo",
+        "inglés": "Intermedio (B2)"
+      },
+      "educacion": [
+        {
+          "institucion": "Universidad de Buenos Aires",
+          "titulo": "Licenciatura en Psicología",
+          "anioGraduacion": 2012
+        },
+        {
+          "institucion": "Asociación Argentina de Terapia Cognitiva",
+          "titulo": "Especialización en Terapia Cognitivo-Conductual",
+          "anioGraduacion": 2014
+        }
+      ],
+      "experienciaLaboral": [
+        {
+          "empresa": "Consultorio Privado",
+          "cargo": "Psicóloga Clínica",
+          "periodo": "2014 - Presente",
+          "responsabilidades": [
+            "Terapia individual y grupal para adultos y adolescentes.",
+            "Talleres de mindfulness y manejo del estrés.",
+            "Colaboración con otros profesionales de la salud mental."
+          ]
+        },
+        {
+          "empresa": "Hospital Central de Buenos Aires",
+          "cargo": "Psicóloga Residente",
+          "periodo": "2012 - 2014",
+          "responsabilidades": [
+            "Atención psicológica a pacientes en áreas de salud mental.",
+            "Participación en equipos multidisciplinarios para el tratamiento de trastornos emocionales."
+          ]
+        }
+      ],
+      "intereses": [
+        "Salud mental comunitaria",
+        "Investigación en terapia cognitivo-conductual",
+        "Mindfulness y bienestar emocional"
+      ],
+      "logros": [
+        "Publicación de un artículo sobre técnicas de mindfulness en la revista 'Psicología y Bienestar'.",
+        "Participación como ponente en el Congreso Internacional de Psicología 2023."
+      ],
+      "disponibilidad": {
+        "modalidad": ["Presencial", "Remoto"],
+        "jornada": ["Medio tiempo", "Tiempo completo"]
+      }
+    },
+    "portfolio": {
+      "status": true,
+      "images": [
+        {
+          "image": "../../../background.webp",
+          "description": "Taller de mindfulness realizado en 2024.",
+          "date": "01/10/2025",
+          "type": "taller"
+        },
+        {
+          "image": "../../../background.webp",
+          "description": "Sesión grupal de terapia cognitivo-conductual.",
+          "date": "01/22/2025",
+          "type": "terapia-grupal"
+        }
+      ]
+    }
+  },
+  {
     "about": {
       "description": "Somos un consultorio médico integral que ofrece una amplia gama de servicios para cuidar de tu salud y la de tu familia. Nuestro equipo de profesionales altamente capacitados está listo para atenderte con la mejor calidad y calidez.",
       "horarios": [
@@ -542,25 +704,85 @@
       "status": true,
       "professionals": [
         {
+          "id": "Laura-Martinez-Psicologa",
           "experience": "10 años",
           "name": "Laura Martínez",
           "profession": "Psicóloga",
-          "profileImg": "../../../laura-martinez.webp",
-          "specialization": "Terapia Cognitivo-Conductual"
+          "profileImg": "../../../perfil.webp",
+          "specialization": "Terapia Cognitivo-Conductual",
+          "proFastProfile":{
+            "status":true,
+            "url":"/Profiles/Laura-Martinez-Psicologa"
+          },
+          "availability":{
+            "dateOfVacations": {
+              "status": true,
+              "start": "01/02/2025", 
+              "end": "15/02/2025" 
+          },
+          "emergencyLeave": false,
+          "workingHours": {
+              "start": "09:00",
+              "end": "18:00"
+          },
+          "daysOff": ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
+          "daysOn":["Tuesday","Thursday"]
+          }
+         
         },
         {
+          "id": "Juan-Perez-Flembotista",
           "experience": "8 años",
           "name": "Juan Pérez",
           "profession": "Flebotomista",
-          "profileImg": "../../../juan-perez.webp",
-          "specialization": "Extracción de Sangre"
+          "profileImg": "../../../perfil.webp",
+          "specialization": "Extracción de Sangre",
+          "proFastProfile":{
+            "status":false,
+            "url":""
+          },
+          "availability":{
+            "dateOfVacations": {
+              "status": true,
+              "start": "03/02/2025", 
+              "end": "15/02/2025" 
+          },
+          "emergencyLeave": false,
+          "workingHours": {
+              "start": "13:00",
+              "end": "21:00"
+          },
+          "daysOff": ["Saturday", "Sunday"],
+          "daysOn":["Monday", "Tuesday", "Wednesday","Thursday","Friday"]
+
+          }
         },
         {
+          "id": "Maria-Gomez-Pediatra",
           "experience": "12 años",
           "name": "María Gómez",
           "profession": "Pediatra",
-          "profileImg": "../../../maria-gomez.webp",
-          "specialization": "Medicina Infantil"
+          "profileImg": "../../../perfil.webp",
+          "specialization": "Medicina Infantil",
+          "proFastProfile":{
+            "status":false,
+            "url":""
+          },
+          "availability":{
+            "dateOfVacations": {
+              "status": true,
+              "start": "01/02/2025", 
+              "end": "15/02/2025" 
+          },
+          "emergencyLeave": true,
+          "workingHours": {
+              "start": "09:00",
+              "end": "18:00"
+          },
+          "daysOff": ["Saturday", "Sunday"],
+          "daysOn":["Monday", "Tuesday", "Wednesday","Thursday","Friday"]
+
+          }
         }
       ]
     },

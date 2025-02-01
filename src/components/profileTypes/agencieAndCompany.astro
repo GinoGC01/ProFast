@@ -34,6 +34,13 @@ const buttons = [
 ---
 <section class="profile-section">
     <div class="portada">
+      {
+        verify && (
+          <span class="verificado">
+            Perfil verificado <Check />
+          </span>
+        )
+      }
       <img
         src={backgroundImg}
         alt={`Background image of ${name} `}
@@ -56,8 +63,10 @@ const buttons = [
               </span>
             )
           }
+          
         </figure>
         <div class="data">
+         
           <h1 style={`view-transition-name: ${`profession-${id}`}`}>
             {profession}
           </h1>
@@ -65,18 +74,10 @@ const buttons = [
             <h2 style={`view-transition-name: ${`name-${id}`}`}>
               {name}
             </h2>
-            {
-              verify && (
-                <span class="verificado">
-                  verificado <Check />
-                </span>
-              )
-            }
+            
           </div>
           <span class="location"><Location />{location}</span>
-          <span class="logro"
-            ><CircleStar /> +{testimonies.length} clientes satisfechos</span
-          >
+          <span class="logro"><CircleStar /> +{testimonies.length} clientes satisfechos</span>
           <a href="#">Contáctanos</a>
         </div>
       </header>
@@ -110,6 +111,7 @@ const buttons = [
       gap: 1em;
     }
     .portada {
+      position: relative;
       width: 100%;
       height: 35.5vh;
       grid-column: 1 / 3;
@@ -190,14 +192,17 @@ const buttons = [
     }
   
     .verificado {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: flex;
       align-items: center;
       gap: 0.3em;
       padding: 5px 20px;
       background-color: #14ae5c;
       color: white;
-      border-radius: 20px;
       font-size: 0.8em;
+      border-radius: 0 0 20px 0;
     }
   
     .data a {

@@ -55,8 +55,9 @@
 
 .price {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-block: 10px;
+  color: #14ae5c;
 }
 
 .price > span {
