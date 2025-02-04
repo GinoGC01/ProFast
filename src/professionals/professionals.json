@@ -717,13 +717,13 @@
           "availability":{
             "dateOfVacations": {
               "status": true,
-              "start": "01/02/2025", 
+              "start": "10/02/2025", 
               "end": "15/02/2025" 
           },
           "emergencyLeave": false,
           "workingHours": {
-              "start": "09:00",
-              "end": "18:00"
+              "start": "13:00",
+              "end": "23:00"
           },
           "daysOff": ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
           "daysOn":["Tuesday","Thursday"]
@@ -774,10 +774,10 @@
               "start": "01/02/2025", 
               "end": "15/02/2025" 
           },
-          "emergencyLeave": true,
+          "emergencyLeave": false,
           "workingHours": {
               "start": "09:00",
-              "end": "18:00"
+              "end": "23:00"
           },
           "daysOff": ["Saturday", "Sunday"],
           "daysOn":["Monday", "Tuesday", "Wednesday","Thursday","Friday"]

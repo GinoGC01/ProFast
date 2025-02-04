@@ -37,7 +37,7 @@ export const checkAvailability = (availability) => {
   } else if (isDayOff) {
     return 'dia no laboral'
   } else if (currentTime) {
-    return 'fuera horario laboral'
+    return 'horario laboral'
   } else {
     return 'disponible'
   }

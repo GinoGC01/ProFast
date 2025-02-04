@@ -1,3 +1,15 @@
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: .3;
+    }
+}
+
+
 .header-professionals h3{
     margin-bottom: 20px;
 }
@@ -7,11 +19,31 @@
     grid-template-columns: 5em 1fr;
     grid-template-rows: 5em 1fr;
     width: 100%;
-    gap: .5em;
-    margin-bottom: 10px;
+    gap: 1em;
     position: relative;
     color: white;
     cursor: pointer;
+    padding: 10px 7px;
+    transition: scale .2s, background-color .2s;
+
+}
+
+.visible-data:hover{
+    scale: 1.02;
+    border: 1px solid #80808085;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.arrow-visible-data{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: transform .5s;
+}
+
+.arrowReverse-visible-data{
+    transform: rotate(180deg);
 }
 
 .visible-data picture{
@@ -54,9 +86,155 @@
     max-height: 500px;
 }
 
-.visible-data .name {
+
+.text-container_visible-data a{
     display: inline;
+    max-width: 250px;
+}
+
+
+.professionAndProfile-container{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.professionAndProfile-container .star-profile{
+    position: relative;
 }
 
 
 
+.professionAndProfile-container .star-profile::after{
+    content: 'Perfil disponible en la plataforma';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+
+    display: block;
+    padding: 5px 10px;
+    border-radius: 20px 20px 20px 0;
+    background-color: rgb(48, 48, 48);
+    font-size: .7em;
+    width: 170px;
+    text-align: center;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+
+.professionAndProfile-container .star-profile:hover::after{
+    z-index: 2000;
+    opacity: 1;
+}
+
+.visible-data .profession{
+    font-weight: 300;
+    color: rgba(165, 165, 165, 0.8);
+}
+
+.visible-data a{
+    color: white;
+}
+.visible-data a:hover strong{
+    text-decoration: underline;
+}
+
+.visible-data .diasDisponible{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    padding: 10px 0 20px 0 ;
+}
+
+.visible-data .diasDisponible li{
+    flex-shrink: 0;
+    padding: 7px 12px;
+    border-radius: 15px;
+    border: 1px solid #d1d1d1;
+    background-color: #2e2e2e;
+}
+
+.visible-data .title-disponibilidad{
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.availability{
+    display: inline-block;
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-left: 7px;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.availability::before,
+.availability::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.availability::before {
+    animation-delay: -0.5s; /* Retraso para el primer pseudoelemento */
+}
+
+.availability::after {
+    animation-delay: -1s; /* Retraso para el segundo pseudoelemento */
+}
+
+.ok-availability{
+    background-color: green;
+}
+
+.ok-availability::before,
+.ok-availability::after{
+    background-color: green;
+}
+
+.no-availability{
+    background-color: yellow;
+}
+
+.no-availability::before,
+.no-availability::after{
+    background-color: yellow;
+}
+
+.availability-text{
+    opacity: 0;
+    z-index: -1;
+}
+
+.visible-data:hover  .availability-text{
+    z-index: 1000;
+    opacity: 1;
+}
+
+.name{
+    position: relative;
+}
+
+.availability-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+
+    font-size: .8em;
+    max-width: 400px;
+    z-index: 3000;
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    transition: opacity .2s;
+}
